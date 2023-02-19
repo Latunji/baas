@@ -35,6 +35,9 @@
 .info p{
     margin : 0;
 }
+.right{
+    background-repeat: no-repeat;
+}
 .buttons button{
     /* width: 47.49px;
     height: 47.49px;
@@ -47,6 +50,7 @@
     transform: matrix(-1, 0, 0, 1, 0, 0); */
 
 }
+
 .buttons{
     display: flex;
     flex-direction: row;

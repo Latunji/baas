@@ -6,12 +6,16 @@ import ImageSection from "../../overlaySection/ImageSection";
 
 function LoginPage() {
   return (
-    <div className={classes.signin_body}>
-      <div className={classes.form}>
-        <Header/>
-        <LoginForm/>
+    <div className="container">
+      <div className="App">
+        <div className={classes.signin_body}>
+          <div className={classes.form}>
+            <Header />
+            <LoginForm />
+          </div>
+          <ImageSection />
+        </div>
       </div>
-      <ImageSection/>
     </div>
   );
 }

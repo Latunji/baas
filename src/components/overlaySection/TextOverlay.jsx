@@ -18,13 +18,15 @@ function TextOverlay() {
        
       </div>
       <div className={classes.buttons}>
-          <button>
-            right
-            {/* <img src={right} alt="right" /> */}
+          <button>left
+             {/* <img style={{ 
+      backgroundImage: `url(${right})` 
+    }} alt="right"/> */}
           </button>
-          <button>
-            left
-            {/* <img src={left} alt="left" /> */}
+          <button>right
+             {/* <img  style={{ 
+      backgroundImage: `url(${left})` 
+    }} alt="left" /> */}
           </button>
         </div>
     </div>
