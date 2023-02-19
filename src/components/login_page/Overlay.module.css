@@ -1,0 +1,23 @@
+
+.overlay_section{
+   
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    position: relative;
+    bottom: 2.92%;
+    left:115px;
+    top: 340px;
+    height: 336px;
+    width: 547px;
+    border-radius: 0px;
+
+
+    background: linear-gradient(111.26deg, rgba(255, 255, 255, 0.6) 11.75%, rgba(255, 255, 255, 0.18) 88.07%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(7.5px);
+}
+
