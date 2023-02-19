@@ -1,0 +1,14 @@
+
+.image_section{
+    display: flex;
+     /* width: 650px;
+    height: 80vh; */
+    align-items: center;
+}
+.image_section img {
+    position: absolute;
+    width: 500px;
+    height: 580px;
+    left: 702px;
+    top: 63px;
+}
