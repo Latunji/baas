@@ -38,8 +38,8 @@
 .right{
     background-repeat: no-repeat;
 }
-.buttons button{
-    /* width: 47.49px;
+/* .buttons button{
+    width: 47.49px;
     height: 47.49px;
     width: 47.49px;
     height: 47.49px;
@@ -47,7 +47,7 @@
     border-radius: 50%;
     background-color: none;
 
-    transform: matrix(-1, 0, 0, 1, 0, 0); */
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 
 }
 
@@ -63,4 +63,33 @@
     height: 47.49px;
     left: 311px;
     top: 247px;
+} */
+
+
+.buttons button{
+    border: none;
+    border-radius: 50%;
+    background-color: none;
+
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40.03px;
+
+    position: absolute;
+    width: 110px;
+    height: 47.49px;
+    left: 341px;
+    top: 160px;
+}
+
+.buttons img{
+    width: 47.49px;
+    height: 47.49px;
+    left: auto;
 }

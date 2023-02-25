@@ -16,7 +16,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
-    line-height: 40px;
+    line-height: 10px;
     color: #0D0D0D;
 }
 .welcome_message p{
@@ -26,7 +26,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 4px;
     color: #757575;
 }
 
@@ -47,7 +47,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 19px;
-    line-height: 20px;
+    line-height: 5px;
     color: #0D0D0D;
 }
 .fillform input{
@@ -56,7 +56,7 @@
     flex-direction: row;
     align-items: center;
     padding: 10px 14px;
-    gap: 8px;
+    gap: 3px;
     width: 320px;
     height: 44px;
     background: #FFFFFF;
