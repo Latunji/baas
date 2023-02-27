@@ -6,15 +6,10 @@ import ImageSection from "./ImageSection";
 
 function LoginPage() {
   return (
-    <div className="container">
-      <div className="App">
-        <div className={classes.signin_body}>
-          <div className={classes.form}>
-            <Header />
-            <LoginForm />
-          </div>
-          <ImageSection />
-        </div>
+    <div className={classes.signin_body}>
+      <div className={classes.form}>
+        <Header/>
+        <LoginForm/>
       </div>
     </div>
   );

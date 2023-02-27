@@ -1,12 +1,15 @@
 
 .image_section{
     display: flex;
+    width: 650px;
+    height: 80vh;
     align-items: center;
+    justify-content: center;
 }
 .image_section img {
     position: absolute;
-    width: 450px;
-    height: 540px;
+    width: 620px;
+    height: 830px;
     left: 702px;
     top: 63px;
 }

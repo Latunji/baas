@@ -1,20 +1,16 @@
 .overlay{
+    width: 480px;
     display: flex;
-    flex: 1;
+    padding: 0.5rem 0.5;
     flex-direction: column;
-    margin-right: 2rem;
+    text-align: left;
+    margin-right: 5rem;
     justify-content: flex-start;
     position: absolute;
-    margin-left: 15px;
-
-    background: linear-gradient(111.26deg, rgba(255, 255, 255, 0.6) 11.75%, rgba(255, 255, 255, 0.18) 88.07%);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(7.5px);
+    gap: 80px;
 }
 
 .info{
-    /* width: 293px;
-    height: 20px; */
 
     font-family: 'Inter';
     font-style: normal;
@@ -24,52 +20,13 @@
     white-space: nowrap;
 }
 .text {
-    /* margin: 5px; */
-    font-size: 25px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight:  600;
-    line-height: 38px;
+    margin: 5px;
+    font-size: 30px;
 }
 .info h6{
-    font-size: 15px;
-    margin-top: -10px;
+    font-size: 19px;
+    margin-top: 2px;
 }
-
-.info p{
-    margin : 0;
-}
-.right{
-    background-repeat: no-repeat;
-}
-/* .buttons button{
-    width: 47.49px;
-    height: 47.49px;
-    width: 47.49px;
-    height: 47.49px;
-    border: none;
-    border-radius: 50%;
-    background-color: none;
-
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-
-}
-
-.buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 15.03px;
-
-    position: absolute;
-    width: 110px;
-    height: 47.49px;
-    left: 311px;
-    top: 247px;
-} */
-
-
 .buttons button{
     border: none;
     border-radius: 50%;
@@ -83,17 +40,11 @@
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    gap: 40.03px;
+    gap: 15.03px;
 
     position: absolute;
     width: 110px;
     height: 47.49px;
-    left: 341px;
-    top: 160px;
-}
-
-.buttons img{
-    width: 47.49px;
-    height: 47.49px;
-    left: auto;
+    left: 371px;
+    top: 260px;
 }
