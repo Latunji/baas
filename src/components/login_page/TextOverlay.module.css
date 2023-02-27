@@ -6,6 +6,10 @@
     justify-content: flex-start;
     position: absolute;
     margin-left: 15px;
+
+    background: linear-gradient(111.26deg, rgba(255, 255, 255, 0.6) 11.75%, rgba(255, 255, 255, 0.18) 88.07%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(7.5px);
 }
 
 .info{

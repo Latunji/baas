@@ -1,8 +1,8 @@
 import React from "react";
-import LoginForm from "../../LoginForm/LoginForm";
+import LoginForm from "./LoginForm";
 import classes from "./LoginPage.module.css";
-import Header from "../../Header/Header";
-import ImageSection from "../../overlaySection/ImageSection";
+import Header from "../Header/Header";
+import ImageSection from "./ImageSection";
 
 function LoginPage() {
   return (

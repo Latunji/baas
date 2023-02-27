@@ -1,8 +1,6 @@
 
 .image_section{
     display: flex;
-     /* width: 650px;
-    height: 80vh; */
     align-items: center;
 }
 .image_section img {
