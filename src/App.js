@@ -7,7 +7,9 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <LoginPage />
+      <Routes>
+        <LoginPage />
+      </Routes>
     </div>
   );
 }

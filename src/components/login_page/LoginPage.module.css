@@ -23,6 +23,17 @@
     height: 100vh;
 
 }
+@media screen and (max-width: 550px) {
+    .signin_body{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .signin_body{
+        flex-direction: column;
+    }
+}
 
 
 
