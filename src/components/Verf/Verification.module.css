@@ -1,0 +1,104 @@
+.check_email{
+    display: flex;
+    flex-direction: column;
+    color: #0D0D0D;
+    font-family: 'Inter';
+    text-align: center;
+    align-items: center;
+    padding-top: 4rem ;
+
+}
+.check_email img{
+        width: 56px;
+        height: 56px;
+    }
+.check_email h1{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+}
+.check_email p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.button{
+    width: 320px;
+    height: 44px;
+    border: 1px solid #210590;
+    background-color:#210590;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    color: #ffff; 
+}
+
+.button:hover{
+    opacity: 0.7;
+}
+.back{
+    display: flex;
+    flex-direction: row;
+    color: #666666;
+    align-items: center;
+    font-size: 16px;
+    padding: 1rem 0;
+}
+.back img{
+    position: relative;
+    height: 14px;
+    width: 14px;
+    padding: 0 1rem;
+}
+
+@media screen and (max-width:550px){
+    .check_email h1{
+        font-size: 25px;
+    }
+    .check_email img{
+        width: 50px;
+        height: 50px;
+    }
+    .check_email p{
+        font-size: 14px;
+    }
+    .button{
+        width: 220px;
+        height: 35px;
+        font-size: 16px;
+    }
+    .back{
+        font-size: 14px;
+    }
+    .back img{
+        height: 12px;
+        width: 12px;
+    }
+
+}
+
+@media screen and (max-width:350px){
+    .check_email h1{
+        font-size: 20px;
+    }
+    .check_email img{
+        width: 40px;
+        height: 40px;
+    }
+    .check_email p{
+        font-size: 10px;
+    }
+    .button{
+        width: 200px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .back{
+        font-size: 14px;
+    }
+    .back img{
+        height: 10px;
+        width: 10px;
+    }
+
+}

@@ -12,3 +12,15 @@
     left: 702px;
     top: 63px;
 }
+@media screen and (max-width: 550px){
+    .image_section img{
+        height: 6000px;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 840px){
+    .image_section img{
+        height: 800px;
+        width: 600px;
+    }
+}
