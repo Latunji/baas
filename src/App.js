@@ -1,5 +1,6 @@
 import LoginPage from "./components/login_page/LoginPage";
 import SignUpPage from "./components/signup_page/SignUpPage";
+import Verification from "./components/Verf/Verification";
 // importing components from react-router-dom package
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
@@ -24,6 +25,7 @@ function App() {
         with exact path "/contactus", in 
         component props we passes the imported component*/}
         <Route path="signUp" element={<SignUpPage />} />
+        <Route path="verification" element={<Verification />} />
           
         {/* If any route mismatches the upper 
         route endpoints then, redirect triggers 
