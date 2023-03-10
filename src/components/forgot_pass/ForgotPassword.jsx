@@ -11,9 +11,7 @@ const ForgotPassword = () => {
       </div>
       <div className="forgot-form">
         <img src={key} alt="" />
-        <label>Enter New Password</label>
-        <input type="text" placeholder="*******" />
-        <label>Confirm Password</label>
+        <label>Enter Email</label>
         <input type="text" placeholder="*******" />
         <button className='button'>Continue</button>
       </div>
