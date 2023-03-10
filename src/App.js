@@ -6,7 +6,6 @@ import "./App.css";
 
 function App() {
   return (
-
     <>
     {/* This is the alias of BrowserRouter i.e. Router */}
     <BrowserRouter>
@@ -34,11 +33,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   </>
-    // <div className="App">
-    //   <Routes>
-    //     <LoginPage />
-    //   </Routes>
-    // </div>
   );
 }
 
