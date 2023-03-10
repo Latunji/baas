@@ -4,6 +4,7 @@ import SignUpPage from "./components/signup_page/SignUpPage";
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
 import Verification from "./components/Verf/Verification";
+import ForgotPassword from "./components/forgot_pass/ForgotPassword";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-    <Verification/>
+    <ForgotPassword/>
   </>
   );
 }
