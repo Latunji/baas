@@ -4,6 +4,7 @@ import Verification from "./components/Verf/Verification";
 // importing components from react-router-dom package
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
+import Newpass from "./components/forgot_pass/Newpass";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    <Newpass/>
   </>
   );
 }

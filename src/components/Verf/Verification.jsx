@@ -18,11 +18,13 @@ function Verification() {
         <img src={email} alt="email" />
         <h1>Check your email</h1>
         <p>We sent a verification link to your email</p>
-        <Link to={<Otp/>}>
-          <button className={classes.button} onClick={handleOtp}>
-            Enter Otp
-          </button>
-        </Link>
+        <div className={classes.otp}>
+          <input type="text" placeholder="3" />
+          <input type="text" placeholder="0" />
+          <input type="text" placeholder="9" />
+          <input type="text" placeholder="7" />
+        </div>
+        <button className={classes.button}>Enter Otp</button>
 
         <div className={classes.back}>
           <img src={arrow} alt="arrow" />
