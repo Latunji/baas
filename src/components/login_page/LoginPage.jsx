@@ -11,6 +11,10 @@ function LoginPage() {
         <Header/>
         <LoginForm/>
       </div>
+      <div className={classes.image}>
+        <ImageSection/>
+      </div>
+      
     </div>
   );
 }

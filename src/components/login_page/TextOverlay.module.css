@@ -1,25 +1,30 @@
-.overlay{
-    width: 480px;
-    display: flex;
-    padding: 0.5rem 0.5;
-    flex-direction: column;
-    text-align: left;
-    margin-right: 5rem;
-    justify-content: flex-start;
-    position: absolute;
-    gap: 80px;
+.overlay {
+  box-sizing: border-box;
+  width: 440px;
+  display: flex;
+  padding: 0.5rem 0.5;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 20rem;
+  justify-content: flex-start;
+  position: absolute;
+  gap: 1rem;
+  background: linear-gradient(
+    111.26deg,
+    rgba(255, 255, 255, 0.6) 11.75%,
+    rgba(255, 255, 255, 0.18) 88.07%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7.5px);
 }
-.overlay h1{
-    font-size: 31px;
+.overlay h1 {
+  font-size: 20px;
 }
-.overlay h6{
-    font-size: 31px;
+.buttons p {
+  font-size: 18px;
 }
-.buttons p{
-    font-size: 18px;
-}
-.buttons img{
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
+.buttons img {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
