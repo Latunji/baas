@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from "../TextOverlay.module.css";
+import classes from "../login_page/TextOverlay.module.css";
 import avatar from "../../components/assets/avatar-group.png";
 
 function signUpTextOverlay() {
