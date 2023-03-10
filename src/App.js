@@ -3,6 +3,7 @@ import SignUpPage from "./components/signup_page/SignUpPage";
 // importing components from react-router-dom package
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
+import Verification from "./components/Verf/Verification";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    <Verification/>
   </>
   );
 }
