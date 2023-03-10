@@ -11,6 +11,7 @@ function LoginPage() {
         <Header/>
         <LoginForm/>
       </div>
+      <ImageSection />
     </div>
   );
 }
