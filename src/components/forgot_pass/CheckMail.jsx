@@ -1,6 +1,6 @@
 import React from 'react';
-import Nav from "./Nav";
-import classes from "./Verification.module.css";
+import Nav from "../Verf/Nav";
+import classes from "../Verf/Verification.module.css";
 import verified from "../assets/verified.png";
 import { Link } from "react-router-dom";
 
