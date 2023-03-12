@@ -7,7 +7,7 @@ import Newpass from "./components/forgot_pass/Newpass";
 
 function App() {
   return (
-    <>
+    <div className="App">
     {/* This is the alias of BrowserRouter i.e. Router */}
     <BrowserRouter>
       <Routes>
@@ -34,7 +34,7 @@ function App() {
       </Routes>
     </BrowserRouter>
     <Newpass/>
-  </>
+  </div>
   );
 }
 

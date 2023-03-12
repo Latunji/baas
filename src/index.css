@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:wght@500&display=swap');
 
-body {
-  align-items: center;
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  font-family: 'Roboto Mono', monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root{
+  --blue: #210590;
+  --neutral: #757575;
+  --yellow: #F79009;
+  --red: #F04438;
+  --green: #12B76A;
+  --background: #F7F7F7;
+  --section-color: #ffffff;
+  --card-color: #170465;
+  --selected: #e9e6f4;
 }

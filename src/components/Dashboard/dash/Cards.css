@@ -1,0 +1,10 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 16px;
+}
+.parentcontainer{
+    width: 100%;
+}
