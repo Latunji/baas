@@ -14,8 +14,8 @@
 
 @media screen and (max-width: 550px){
     .image_section img{
-        height: 6000px;
-        width: 400px;
+        height:520px;
+        width: 420px;
     }
 }
 @media screen and (max-width: 840px){

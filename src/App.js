@@ -4,6 +4,7 @@ import Verification from "./components/Verf/Verification";
 import ForgotPass from "./components/forgot_pass/ForgotPassword";
 import CheckMail from "./components/forgot_pass/CheckMail";
 import NewPassword from "./components/forgot_pass/Newpass";
+import Dashboard from "./components/Dashboard/Components";
 // importing components from react-router-dom package
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
@@ -32,6 +33,7 @@ function App() {
         <Route path="forgotPassword" element={<ForgotPass />} />
         <Route path="newPassword" element={<NewPassword />} />
         <Route path="checkMail" element={<CheckMail />} />
+        <Route path="dashboard" element={<Dashboard />} />
           
         {/* If any route mismatches the upper 
         route endpoints then, redirect triggers 

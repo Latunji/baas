@@ -1,13 +1,11 @@
 .signin_body {
     display: flex;
     justify-content: center;
-    align-content: flex-start;
     border: 1px #FFFFFF solid;
     width: 100%;
     height: 100vh;
     background: #FFFFFF;
     padding: 0px;
-    gap: 1rem;
 
 }
 
