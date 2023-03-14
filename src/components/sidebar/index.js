@@ -33,3 +33,22 @@ export const SidebarData = [
     heading: "Settings",
   },
 ];
+
+export const SignUpData = [
+  {
+    heading: "Personal Information",
+  },
+  {
+    heading: "Business Information",
+  },
+  {
+    heading: "Financial Information",
+  },
+  {
+    heading: "KYC and AML",
+  },
+  {
+    heading: "Supporting Documents"
+  }
+
+];

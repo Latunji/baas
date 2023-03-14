@@ -1,5 +1,6 @@
 import React from 'react';
-import Sidebar from '../Sidebar';
+import { Link } from 'react-router-dom';
+import Sidebar from "../sidebar/Sidebar1";
 import classes from "./Userinfo.module.css";
 
 const BusinessInfo = () => {
@@ -37,7 +38,7 @@ const BusinessInfo = () => {
           </div>
         </div>
         <div className={classes.btn}>
-          <button>Next</button>
+          <Link className='link' to='/financialInfo'><button>Next</button></Link>
         </div>
         <p className={classes.footer}>Baas 2023</p>
       </div>
