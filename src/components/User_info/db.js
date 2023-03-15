@@ -3,6 +3,7 @@ import upload from '../assets/upload.png'
 
 export const DocData = [
   {
+    
     name: "ID documents (e.g. passport, ID card)",
     icon: doc,
     heading: "Tech design requirements.pdf",

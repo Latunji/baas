@@ -84,6 +84,8 @@
     flex-direction: column;
     background-color: #E9E6F4;
     color:#757575 ;
+    height: 100vh;
+    margin-top: -0.5rem;
     margin-left:-1rem ;
 }
 .stages{
@@ -96,4 +98,15 @@
 }
 .stages>div{
     padding: 3rem 1rem;
+}
+.stage{
+    margin: 0rem 1rem;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    right: 85.43%;
+}
+.stages>span{
+    display: flex;
+    margin: 3rem 0rem;
 }
