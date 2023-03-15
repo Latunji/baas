@@ -6,7 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin:1em;
+  overflow: hidden;
 }
 .dashboard-content{
     display: grid;

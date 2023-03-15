@@ -4,7 +4,7 @@ import Verification from "./components/Verf/Verification";
 import ForgotPass from "./components/forgot_pass/ForgotPassword";
 import CheckMail from "./components/forgot_pass/CheckMail";
 import NewPassword from "./components/forgot_pass/Newpass";
-import Dashboard from "./components/Dashboard/Components";
+import Dashboard from "./components/Dashboard/dash/Dashboard";
 import BusinessInfo from "./components/User_info/BusinessInfo";
 import FinancialInfo from "./components/User_info/FinancialInfo";
 import KYC from "./components/User_info/KYC";
@@ -17,7 +17,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       {/* This is the alias of BrowserRouter i.e. Router */}
       <BrowserRouter>
         <Routes>

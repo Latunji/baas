@@ -34,7 +34,7 @@ const Sidebar = () => {
         })}
         <div className="user">
           <img src={email} />
-          <div>
+          <div className='username'>
             <h2>Opeoluwa Samuel</h2>
             <p>Admin</p>
           </div>
