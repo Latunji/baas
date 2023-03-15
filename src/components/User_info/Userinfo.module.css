@@ -39,6 +39,17 @@
     flex-direction: column;
     padding:2rem 1rem;
 }
+.info>h1{
+    font-weight: 600;
+    font-size: 36px;
+}
+.info>p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #757575;
+
+}
 .profileform{
     box-sizing: border-box;
     display: flex;
@@ -96,3 +107,62 @@
     color: #757575;
 }
 
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+.doc{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 342px;
+    height: 126px;
+    padding: 0rem 2rem;
+    background: #FFFFFF;
+    border: 1px solid #4730A3;
+    border-radius: 12px;
+    margin: 3rem 0rem;
+}
+.upload{
+    box-sizing: border-box;
+    width: 342px;
+    height: 126px;
+    background: #FFFFFF;
+
+    border: 1px solid #4730A3;
+    border-radius: 12px;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #0D0D0D;
+}
+.heading{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #4730A3;
+}
+.icon>img{
+    width: 34.29px;
+    height: 34.29px;
+}
+.size{
+    font-size: 12px;
+    line-height: 18px;
+    color: #757575;
+}
+.uploaded{
+    font-size: 12px;
+    line-height: 18px;
+    color: #757575;
+}
+.info2{
+    display: flex;
+    gap: 1rem;
+}

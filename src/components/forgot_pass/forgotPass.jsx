@@ -13,11 +13,11 @@ const ForgotPassword = () => {
       </div>
       <div className="forgot-form">
         <img src={key} alt="" />
-        <h1>Enter Email</h1>
-        <p>We sent a password reset link to oopeoluwa@gmail.com</p>
+        <h1>Forgot Password?</h1>
+        <p>No worries, we'll send you reset instructions</p>
         <input type="text" placeholder="Enter your email" />
         <button className="button">
-          <Link className="link" to="/newPassword">
+          <Link className="link" to="/checkMail">
             Reset Password
           </Link>
         </button>

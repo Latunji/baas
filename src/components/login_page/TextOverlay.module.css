@@ -19,12 +19,25 @@
 }
 .overlay h1 {
   font-size: 20px;
+  margin-left: 1rem;
+}
+.overlay p{
+  margin-left: 1rem;
 }
 .buttons p {
   font-size: 18px;
 }
 .buttons img {
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+
+  /* display: flex; */
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15.03px;
+  position: relative;
+  left: 311px;
+  top: -47px;
 }

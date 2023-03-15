@@ -1,5 +1,6 @@
 import React from 'react';
-import Sidebar from "../sidebar/Sidebar";
+import { Link } from 'react-router-dom';
+import Sidebar from "../sidebar/Sidebar1";
 import classes from "./Userinfo.module.css";
 
 const FinancialInfo = () => {
@@ -8,9 +9,9 @@ const FinancialInfo = () => {
       <Sidebar />
       <div className={classes.info}>
         <div className={classes.currentpage}>
-          <h1>Personal Information</h1>
+          <h1>Financial Information</h1>
           <p>youremail@gmail.com</p>
-          <p>Provide your personal information, so we can get to know you. </p>
+          <p>Provide your financial information, so we can know your status and run a check. </p>
         </div>
         <div className={classes.formsection}>
           <div className={classes.profileform}>
@@ -28,8 +29,11 @@ const FinancialInfo = () => {
           </div>
         </div>
         <div className={classes.btn}>
-          <p>back</p>
+          <Link to='/setupProfile'><p>back</p></Link>
+          <Link className='link' to='/kyc'>
           <button>Next</button>
+          </Link>
+          
         </div>
         <p className={classes.footer}>Baas 2023</p>
       </div>
@@ -37,4 +41,4 @@ const FinancialInfo = () => {
   );
 }
 
-export default FinancialInfo
+export default FinancialInfo;

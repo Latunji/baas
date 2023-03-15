@@ -6,12 +6,12 @@ import left from "../assets/left.png";
 function TextOverlay() {
   return (
     <div className={classes.overlay}>
-      <hi>Streamline Your B2B Payments with Confidence and Convenience.</hi>
+      <h1>Streamline Your B2B Payments with Confidence and Convenience.</h1>
 
       <h1>Opeoluwa Adeyemi</h1>
-      <p>Product Designer, Hourglass</p>
+      <p>Product Designer, Hourglass<br/> <span>Web Design Agency</span></p>
+  
       <div className={classes.buttons}>
-        <p>Web Design Agency</p>
         <img src={right} alt="right" />
         <img src={left} alt="left" />
       </div>

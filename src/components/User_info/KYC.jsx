@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from "./Userinfo.module.css";
-import Sidebar from '../sidebar/Sidebar';
+import Sidebar from '../sidebar/Sidebar1';
+import { Link } from 'react-router-dom';
 
 
 const KYC = () => {
@@ -31,7 +32,7 @@ const KYC = () => {
           </div>
         </div>
         <div className={classes.btn}>
-          <button>Next</button>
+          <button><Link className='link' to="/supportDoc">Next</Link></button>
         </div>
         <p className={classes.footer}>Baas 2023</p>
       </div>

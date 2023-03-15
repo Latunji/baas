@@ -1,5 +1,6 @@
 import React from 'react'
-import Sidebar from '../sidebar/Sidebar'
+import { Link } from 'react-router-dom';
+import Sidebar from '../sidebar/Sidebar1';
 import classes from './Userinfo.module.css'
 
 const SetupProfile = () => {
@@ -39,7 +40,10 @@ const SetupProfile = () => {
           </div>
         </div>
         <div className={classes.btn}>
+          <Link to='/businessInfo' className='link'>
           <button>Next</button>
+          </Link>
+          
         </div>
         <p className={classes.footer}>Baas 2023</p>
       </div>

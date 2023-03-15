@@ -1,21 +1,22 @@
 import React from 'react';
-import Nav from "../Verf/Nav";
+import Nav from "./Nav";
 import classes from "../Verf/Verification.module.css";
 import verified from "../assets/verified.png";
 import { Link } from "react-router-dom";
 
-const CheckMail = () => {
+const PasswordReset = () => {
   return (
     <main>
       <Nav />
       <section className={classes.check_email}>
         <img src={verified} alt="verified" />
-        <h1>Check your email</h1>
-        <p>We sent a verification link to your email</p>
-        <button className={classes.button}>Go To Dashboard</button>
+        <h1>Password Reset</h1>
+        <p>Your password has been successfully reset. <br/> Click below to log in magically</p>
+    
+        <button className={classes.button}> <Link className="link" to="/login">Continue</Link></button>
       </section>
     </main>
   );
 }
 
-export default CheckMail
+export default PasswordReset

@@ -24,8 +24,11 @@ function Verification() {
           <input type="text" placeholder="9" />
           <input type="text" placeholder="7" />
         </div>
-        <button className={classes.button}>Enter Otp</button>
-
+        <button className={classes.button}> <Link className="link" to="/verified">Enter Otp</Link></button>
+        
+        <p>
+          Didn't receive the email? click to resend
+        </p>
         <div className={classes.back}>
           <img src={arrow} alt="arrow" />
           <p>go back to login</p>

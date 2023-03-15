@@ -1,0 +1,28 @@
+.nav{
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+.nav img{
+    width: 125px;
+    height: 46px;
+}
+@media screen and (max-width:550px){
+    .nav{
+        padding: 0.25rem 0.5rem;
+    }
+    .nav img{
+        width: 100px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:350px){
+    .nav{
+        padding: 0.15rem 0.3rem;
+    }
+    .nav img{
+        width: 80px;
+        height: 30px;
+    }
+}

@@ -2,23 +2,27 @@ import React from "react";
 import Logo from "../assets/logo.png";
 import key from "../assets/passkey.png";
 import "./ForgotPassword.css";
-import right from '../assets/right.png'
+import right from '../assets/right.png';
+import classes from "../Verf/Verification.module.css";
+import email from '../assets/email.png';
+import Nav from "./Nav";
 import { Link } from "react-router-dom";
 
-const Newpass = () => {
+const NewPassword = () => {
   return (
-    <div className="forgotpassword">
-      <div className="top-bar">
-        <img src={Logo} alt="logo" />
-      </div>
+    <main>
+      <Nav />
+      <section className={classes.check_email}>
+    <img src={email} alt="verified" />
+        <h1>Set new password</h1>
+        <p>Your new password must be different to previously used passwords.</p>
       <div className="forgot-form">
-        <img src={key} alt="" />
-        <label>Enter New Password</label>
+        <label>Password</label>
         <input type="text" placeholder="*******" />
         <label>Confirm Password</label>
         <input type="text" placeholder="*******" />
         <button className="button">
-          <Link className="link" to="/dashboard">
+          <Link className="link" to="/passwordReset">
             Continue
           </Link>
         </button>
@@ -29,8 +33,9 @@ const Newpass = () => {
           </span>
         </Link>
       </div>
-    </div>
+    </section>
+    </main>
   );
 };
 
-export default Newpass;
+export default NewPassword;

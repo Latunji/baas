@@ -9,10 +9,12 @@ const Verified = () => {
       <Nav />
       <section className={classes.check_email}>
         <img src={verified} alt="verified" />
-        <h1>Check your email</h1>
-        <p>We sent a verification link to your email</p>
+        <h1>Email Verified</h1>
+        <p>Your email has been successfully verified, click below to login magically.</p>
         <button className={classes.button}>
+        <Link className="link" to="/profileInfo">
           Go To Dashboard
+          </Link>
         </button>
       </section>
     </main>
