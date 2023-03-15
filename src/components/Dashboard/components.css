@@ -11,6 +11,6 @@
 .dashboard-content{
     display: grid;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     flex: 1;
 }

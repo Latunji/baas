@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../Sidebar';
+import Sidebar from '../sidebar/Sidebar';
 import BusinessInfo from './BusinessInfo';
 import FinancialInfo from './FinancialInfo';
 import KYC from './KYC';

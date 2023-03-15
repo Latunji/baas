@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../Sidebar'
+import Sidebar from '../sidebar/Sidebar'
 import classes from './Userinfo.module.css'
 
 const SetupProfile = () => {
