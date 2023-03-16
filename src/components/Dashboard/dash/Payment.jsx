@@ -10,30 +10,38 @@ const Payment = () => {
     <div className="payment-section">
       <h1>Payment Section</h1>
       <div className="credit-card">
-        <img src={cc} alt="cc.png" className='cc'/>
-        <img src={cc2} alt="cc2.png" className='cc2'/>
+        <img src={cc} alt="cc.png" className="cc" />
+        <img src={cc2} alt="cc2.png" className="cc2" />
       </div>
       <div className="send-buttons">
-        {TransfarData.map((send) =>{
-          return(
+        {TransfarData.map((send) => {
+          return (
             <div className="transfar-data">
-              <img src={send.icon} alt="transfar.png"/>
+              <img src={send.icon} alt="transfar.png" />
               <p>{send.name}</p>
             </div>
-          )
+          );
         })}
       </div>
-      <div className="send-section"></div>
-      <h1>Quick Transfar</h1>
+
       <div className="quick-transfers">
-        {QuickTransfar.map((users) =>{
-          return(
-            <div className="uData">
-              <img src={users.icon} alt=""/>
-              {users.name}
-            </div>
-          )
-        })}
+        <h1>Quick Transfars</h1>
+        <select className="reciever">
+          <option selected disabled>
+            {QuickTransfar.map((users) => {
+              return (
+                <div className="uData">
+                  <img src={users.icon} alt="" />
+                  {users.name}
+                </div>
+              );
+            })}
+          </option>
+        </select>
+        <input type='text' placeholder='
+        Enter Amount' className="sendamount"/>
+        <input type='text' placeholder=' ' className="sendnote"/>
+        <button>Send Money</button>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ const KYC = () => {
       <div className={classes.info}>
         <div className={classes.currentpage}>
           <h1>KYC and AML</h1>
-          <p>(Anti-Money Laundering) Compliance Check.</p>
+          <span>(Anti-Money Laundering) Compliance Check.</span><br/>
         </div>
         <div className={classes.kyc_sec}>
           <div className={classes.kyc}>
@@ -23,6 +23,7 @@ const KYC = () => {
               Consent for verification of personal and business information
             </label>
           </div>
+          <br/>
           <div className={classes.kyc}>
             <input type="checkbox" placeholder="regulation" />
             <label>

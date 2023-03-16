@@ -4,7 +4,7 @@
     width: 100vw;
     height: 100vh;
 }
-.userinfo input[type=checkbox]{
+.info input[type=checkbox]{
     position: relative;
     border: 1px #4730A3 solid;
     color: #4730A3;
@@ -34,10 +34,14 @@
     display: flex;
     flex-direction: column;
 }
+.currentpage p{
+    color: #210590;
+}
 .info{
     display: flex;
     flex-direction: column;
-    padding:2rem 1rem;
+    padding:2rem 2rem 3rem;
+
 }
 .info>h1{
     font-weight: 600;

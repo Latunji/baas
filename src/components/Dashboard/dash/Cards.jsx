@@ -11,7 +11,6 @@ const Cards = () => {
                 <div className="parentcontainer">
                     <Card
                     icon = {card.icon}
-                    
                     title ={card.title}
                     amount = {card.amount}
                     color ={card.color}

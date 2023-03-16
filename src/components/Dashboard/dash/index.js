@@ -117,4 +117,31 @@ export const TransfarData=[
         icon: more,
         name: 'more'
     }
-]
+];
+
+export const HistoryData = [
+  {
+    icon: moneyIn,
+    subject: "Opeoluwa Samuel",
+    time: "10:42:23 AM",
+    date: "20-03-2022",
+    amount: "-₦5,000.00",
+    status: "Success",
+  },
+  {
+    icon: moneyOut,
+    subject: "Adeyemi Onanuga",
+    time: "10:42:23 AM",
+    date: "20-03-2022",
+    amount: "+₦5,000.00",
+    status: "Success",
+  },
+  {
+    icon: moneyIn,
+    subject: "Obi Amaka",
+    time: "10:42:23 AM",
+    date: "20-03-2022",
+    amount: "-₦5,000.00",
+    status: "Pending",
+  },
+];

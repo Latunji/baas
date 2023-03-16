@@ -5,7 +5,6 @@
     background-color: var(--section-color);
     height: 100vh;
     width: 240px;
-    padding-top: 1.5rem;
     transition: all 300ms ease;
     margin:0rem;
 }
@@ -60,20 +59,26 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    height: 4rem;
-    font-size: 12px;
+}
+.username{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
 }
 .user>img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
-.user>h2{
-    font-size: 14px;
-    font-weight: bold;
+.username>h2{
+    font-size: 20px;
+    margin: 0;
+    /* font-weight: bold; */
 }
-.user.p{
+.username>p{
     font-size: 12px;
     font-weight: lighter;
+    margin: 0;
 }
 
 .signup-menu{
@@ -81,6 +86,8 @@
     flex-direction: column;
     background-color: #E9E6F4;
     color:#757575 ;
+    height: 100vh;
+    margin-top: -0.5rem;
     margin-left:-1rem ;
 }
 .stages{
@@ -93,4 +100,15 @@
 }
 .stages>div{
     padding: 3rem 1rem;
+}
+.stage{
+    margin: 0rem 1rem;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    right: 85.43%;
+}
+.stages>span{
+    display: flex;
+    margin: 3rem 0rem;
 }

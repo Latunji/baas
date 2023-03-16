@@ -10,13 +10,13 @@ const FinancialInfo = () => {
       <div className={classes.info}>
         <div className={classes.currentpage}>
           <h1>Financial Information</h1>
-          <p>youremail@gmail.com</p>
-          <p>Provide your financial information, so we can know your status and run a check. </p>
+          <span>Provide your financial information, so we can know your status and run a check. </span><br/>
         </div>
         <div className={classes.formsection}>
           <div className={classes.profileform}>
             <label>Income</label>
             <select type="income" placeholder="#10,000,000" />
+            <br/>
             <label>Source of funds</label>
             <input type="SOF" placeholder="Grant" />
           </div>
@@ -24,6 +24,7 @@ const FinancialInfo = () => {
           <div className={classes.profileform}>
             <label>Networth</label>
             <select type="gender" placeholder="#270,000" />
+            <br/>
             <label>Purpose of account</label>
             <select type="investment" placeholder="Investment" />
           </div>

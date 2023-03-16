@@ -11,7 +11,14 @@ const Sidebar1 = () => {
       </div>
       <div className='stages'>
         {SignUpData.map((form) => {
-          return <div>{form.heading}</div>;
+          return (
+          <span >
+            <div className='stage'>
+              {form.number}
+            </div>
+            {form.heading}
+          </span>
+          )
         })}
       </div>
     </div>

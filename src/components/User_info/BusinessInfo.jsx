@@ -10,18 +10,20 @@ const BusinessInfo = () => {
       <div className={classes.info}>
         <div className={classes.currentpage}>
           <h1>Business Information (for KYCB)</h1>
-          <p>youremail@gmail.com</p>
-          <p>Provide your personal information, so we can get to know you.</p>
+          <span>Provide your personal information, so we can get to know you.</span><br/>
         </div>
         <div className={classes.formsection}>
           <div className={classes.profileform}>
             <label>Business name</label>
             <input type="fullname" placeholder="full name" />
+            <br/>
             <label>Business phone number</label>
             <input type="fullname" placeholder="DD/MM/YYY" />
+            <br/>
             <label>Business website</label>
             {/* <select placeholder="+234">+234</select> */}
             <input type="phone" placeholder="www.baas.com" />
+            <br/>
             <label>Business type</label>
             <select type="id_type" placeholder="bussiness type" />
           </div>
@@ -29,16 +31,21 @@ const BusinessInfo = () => {
           <div className={classes.profileform}>
             <label>Business registration number</label>
             <select type="gender" placeholder="Reg No" />
+            <br/>
             <label>Business email</label>
             <select type="nationality" placeholder="email" />
+            <br/>
             <label>Business address</label>
             <input type="address" placeholder="address" />
+            <br/>
             <label>Business industry</label>
             <input type="id-no" placeholder="Finance" />
           </div>
         </div>
         <div className={classes.btn}>
+        <Link to='/financialInfo' className='link'>
           <button>Next</button>
+          </Link>
         </div>
         <p className={classes.footer}>Baas 2023</p>
       </div>

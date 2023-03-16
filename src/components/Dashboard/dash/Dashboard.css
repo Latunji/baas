@@ -1,12 +1,14 @@
 .dashboard{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
 }
 .dash-content{
     display: flex;
     height: 90vh;
     flex-direction: row;
-    padding: 0rem 1rem;
+    padding: 0rem 2rem;
 }
 .chart-section{
     display: flex;
@@ -20,11 +22,6 @@
 
 .people{
     box-sizing: border-box;
-    width: 200.55px;
-    height: 70.55px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(174, 173, 173, 0.03);
-    border-radius: 10px; 
 }
 
 .chart{
@@ -40,6 +37,12 @@
 }
 .data{
     display: flex;
+    width: 200.55px;
+    height: 70.55px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(174, 173, 173, 0.03);
+    border-radius: 10px;
+    margin: 1rem; 
 }
 .amount-data{
     display: flex;
@@ -62,3 +65,32 @@
     height: 26.84px;
 }
 
+.histories{
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+}
+.history{
+    display: flex;
+    flex-direction: column;
+    width: 757px;
+    height: 52px;
+    justify-content: center;
+    border: 2px #E9E6F4 solid;
+    border-radius: 10px;
+    margin: 1rem 0rem;
+}
+.historyContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0rem 1rem;
+}
+.historyContent>img{
+    width: 36px;
+    height: 36px;
+}
+.historyContent:active{
+    background-color: #E9E6F4;
+    border-radius: 2px #ffff solid;
+}

@@ -4,8 +4,6 @@ import manageAccount from "../assets/sidebar/manageAccount.png";
 import message from "../assets/sidebar/message.png";
 import transactions from "../assets/sidebar/transactions.png";
 import settings from "../assets/sidebar/settings.png";
-// import bell from "../assets/dashboard/bell.png";
-// import search from '../assets/dashboard/search.png';
 
 export const SidebarData = [
   {
@@ -36,18 +34,23 @@ export const SidebarData = [
 
 export const SignUpData = [
   {
+    number: 1,
     heading: "Personal Information",
   },
   {
+    number: 2,
     heading: "Business Information",
   },
   {
+    number: 3,
     heading: "Financial Information",
   },
   {
+    number: 4,
     heading: "KYC and AML",
   },
   {
+    number: 5,
     heading: "Supporting Documents"
   }
 
