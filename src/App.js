@@ -4,20 +4,19 @@ import Verification from "./components/Verf/Verification";
 import ForgotPass from "./components/forgot_pass/ForgotPassword";
 import CheckMail from "./components/forgot_pass/CheckMail";
 import NewPassword from "./components/forgot_pass/Newpass";
-import Dashboard from "./components/Dashboard/dash/Dashboard";
+import Dashboard from "./components/Dashboard/Baas";
 import BusinessInfo from "./components/User_info/BusinessInfo";
 import FinancialInfo from "./components/User_info/FinancialInfo";
 import KYC from "./components/User_info/KYC";
-// import ProfileInfo from "./components/User_info/ProfileInfo";
 import SetupProfile from "./components/User_info/SetupProfile";
 import SupportDoc from "./components/User_info/SupportDoc";
-// importing components from react-router-dom package
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
+import Baas from "./components/Dashboard/Baas";
 
 function App() {
   return (
-    <div className="app">
+    <main className="app">
       {/* This is the alias of BrowserRouter i.e. Router */}
       <BrowserRouter>
         <Routes>
@@ -39,7 +38,7 @@ function App() {
             <Route path="forgotPassword" element={<ForgotPass />} />
             <Route path="newPassword" element={<NewPassword />} />
             <Route path="checkMail" element={<CheckMail />} />
-            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="dashboard" element={<Baas />} />
             <Route path="businessInfo" element={<BusinessInfo />} />
             <Route path="financialInfo" element={<FinancialInfo />} />
             <Route path="kyc" element={<KYC />} />
@@ -54,7 +53,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
+    </main>
   );
 }
 

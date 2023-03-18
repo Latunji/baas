@@ -1,48 +1,46 @@
 .dashboard{
     display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-}
-.dash-content{
-    display: flex;
-    height: 90vh;
-    flex-direction: row;
-    padding: 0rem 2rem;
-}
-.chart-section{
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-evenly;
 }
 .mid-dash{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    margin: 0rem 1rem;
+    justify-content: space-evenly;
 }
 
 .people{
     box-sizing: border-box;
+    padding: auto;
 }
 
 .chart{
     box-sizing: border-box;
-    background: #FFFFFF;
-    width: 100%;
+    height: 100%;
+    width: 520px;
+    background-color: #FFFFFF;
+    padding: 0.4rem 0.4rem;
     border-radius: 10px;
-    gap: 2rem;
 }
-.people>img{
-    width: 20px;
-    height: 20px;
-}
+
 .data{
+    align-items: center;
     display: flex;
-    width: 200.55px;
-    height: 70.55px;
+    width: 200px;
+    height: 75px;
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(174, 173, 173, 0.03);
     border-radius: 10px;
     margin: 1rem; 
+}
+.data>img{
+    width: 60px;
+    height: 60px;
+    padding: 0.3rem;
 }
 .amount-data{
     display: flex;
@@ -51,24 +49,27 @@
 .text{
     font-size: 12px;
 }
-.chart{
-    box-sizing: border-box;
-    width: 600px;
-    align-content: center;
-}
+
 .timeline{
     display: flex;
-    align-content: space-between;
+    align-items: center;
+    gap: 15rem;
 }
 .timeline>button{
     width: 74.44px;
     height: 26.84px;
+    border: none;
+    align-content: flex-end;
 }
 
 .histories{
     display: flex;
     flex-direction: column;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
 }
 .history{
     display: flex;
