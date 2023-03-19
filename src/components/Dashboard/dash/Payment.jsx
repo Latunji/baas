@@ -16,7 +16,7 @@ const Payment = () => {
       <div className="send-buttons">
         {TransfarData.map((send) => {
           return (
-            <div className="transfar-data">
+            <div className="send-button">
               <img src={send.icon} alt="transfar.png" />
               <p>{send.name}</p>
             </div>

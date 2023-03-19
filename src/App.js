@@ -15,13 +15,19 @@ import ProfileInfo from "./components/User_info/ProfileInfo";
 // import ProfileInfo from "./components/User_info/ProfileInfo";
 import SetupProfile from "./components/User_info/SetupProfile";
 import SupportDoc from "./components/User_info/SupportDoc";
-// importing components from react-router-dom package
+import BankTransfar from "./components/transaction/BankTransfar";
+import Transactions from "./components/transaction/Transactions";
+import BaasTransfar from "./components/transaction/baasTransfar/PaymentMethod";
+import Beneficiaries from "./components/transaction/baasTransfar/Beneficiaries";
+import TransferSummary from "./components/transaction/baasTransfar/TransfarSummary";
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
+import Baas from "./components/Dashboard/Baas";
+import PaymentMethod from "./components/transaction/baasTransfar/PaymentMethod";
 
 function App() {
   return (
-    <div className="app">
+    <main className="app">
       {/* This is the alias of BrowserRouter i.e. Router */}
       <BrowserRouter>
         <Routes>
@@ -43,7 +49,7 @@ function App() {
             <Route path="forgotPassword" element={<ForgotPass />} />
             <Route path="newPassword" element={<NewPassword />} />
             <Route path="checkMail" element={<CheckMail />} />
-            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="dashboard" element={<Baas />} />
             <Route path="businessInfo" element={<BusinessInfo />} />
             <Route path="profileInfo" element={<ProfileInfo />} />
             <Route path="financialInfo" element={<FinancialInfo />} />
@@ -55,7 +61,12 @@ function App() {
 
             <Route path="emailVerification" element={<EmailVerification />} />
             <Route path="verified" element={<Verified />} />
-            <Route path="verified" element={<Verified />} />
+            <Route path="baasTransfer" element={<BaasTransfar />} />
+            <Route path="beneficiaries" element={<Beneficiaries />} />
+            <Route path="paymentMethod" element={<PaymentMethod />} />
+            <Route path="transferSummary" element={<TransferSummary />} />
+            <Route path="bankTransfer" element={<BankTransfar />} />
+            <Route path="transactions" element={<Transactions />} />
             {/* If any route mismatches the upper 
         route endpoints then, redirect triggers 
         and redirects app to home component with to="/" */}
@@ -63,7 +74,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
+    </main>
   );
 }
 

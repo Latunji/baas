@@ -1,0 +1,22 @@
+.baas{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dashboard_body{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex: 0.8; */
+    height: fit-content;
+}
+.mid_layer{
+    display: flex;
+    flex-direction: column;
+}

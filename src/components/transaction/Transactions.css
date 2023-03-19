@@ -1,0 +1,61 @@
+.transaction{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background);
+}
+.fund_transfar{
+    display: flex;
+    flex-direction: column;
+}
+.divider{
+    height: 2px;
+    background-color: #210590;
+}
+.transfar_options{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.transfar_type{
+    display: flex;
+    gap: 4rem;
+    justify-content: space-evenly;
+    
+}
+.transfar_type>p{
+    font-size: 14px;
+}
+.select_type{
+    color: #757575;
+}
+.select_type:active{
+    color: #0000;
+}
+
+.make_transfar{
+    display: flex;
+    gap: 1rem;
+}
+.select_transfar_type{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 282px;
+    height: 177px;
+    background: #E9E6F4;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.select_transfar_type>img{
+    width: 60px;
+    height: 60px;
+}
+.select_transfar_type>h1{
+    font-size: 20px;
+}
+.select_transfar_type>p{
+    font-size: 14px;
+    color: #757575;
+}
