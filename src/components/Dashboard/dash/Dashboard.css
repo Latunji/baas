@@ -72,7 +72,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: 795px;
+    width: 775px;
     height: inherit;
     background-color: #FFFFFF;
     padding: 1rem;
@@ -82,7 +82,7 @@
 .history{
     display: flex;
     flex-direction: column;
-    width: 757px;
+    width: 727px;
     height: 52px;
     justify-content: center;
     border: 2px #E9E6F4 solid;
