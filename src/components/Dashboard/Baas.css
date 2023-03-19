@@ -5,7 +5,7 @@
     max-height: inherit;
     width: inherit;
     box-sizing: border-box;
-    flex-wrap: wrap;
+    
     
 }
 .baas_inner{
@@ -16,10 +16,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 .dashboard_body{
     display: flex;
     width: 90%;
     justify-content: space-evenly;
     height: fit-content;
+    
 }
