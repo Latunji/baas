@@ -6,11 +6,12 @@
     width: inherit;
     box-sizing: border-box;
     
-    
 }
 .baas_inner{
-    display: flex;
-    max-height: inherit;
+    /* display: flex;
+    max-height: inherit; */
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
 }
 .body{
     display: flex;
@@ -19,9 +20,16 @@
     flex-wrap: wrap;
 }
 .dashboard_body{
-    display: flex;
-    width: 90%;
+    /* display: flex;
+    width: inherit;
     justify-content: space-evenly;
-    height: fit-content;
-    
+    height: fit-content; */
+    display: grid;
+    width: inherit;
+    grid-template-columns:2fr 1fr;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+.grid-col-span{
+    grid-row: 2 span;
 }
