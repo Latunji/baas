@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: space-between;
     font-weight: 500;
-    margin: 1rem;
+    padding-left: 1rem;
+    /* margin: 1rem; */
 }
 .notification-section{
     display: flex;

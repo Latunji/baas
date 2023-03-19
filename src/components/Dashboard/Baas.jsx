@@ -8,12 +8,14 @@ import Topbar from './dash/Topbar';
 const Baas = () => {
   return (
     <div className="baas">
-      <Sidebar />
-      <div className="body">
-        <Topbar />
-        <div className="dashboard_body">
-          <Dashboard />
-          <Payment />
+      <div className="baas_inner">
+        <Sidebar />
+        <div className="body">
+          <Topbar />
+          <div className="dashboard_body">
+            <Dashboard />
+            <Payment />
+          </div>
         </div>
       </div>
       {/* <Transactions/> */}

@@ -23,7 +23,7 @@ const Payment = () => {
           );
         })}
       </div>
-
+      <hr/>
       <div className="quick-transfers">
         <h1>Quick Transfars</h1>
         <select className="reciever">

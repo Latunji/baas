@@ -22,9 +22,13 @@ export const SidebarData = [
     icon: manageAccount,
     heading: "Account Management",
   },
+  
+  
+];
+export const AccountSetting = [
   {
     icon: api,
-    heading: "Api Key Generator"
+    heading: "Api Key Generator",
   },
   {
     icon: settings,

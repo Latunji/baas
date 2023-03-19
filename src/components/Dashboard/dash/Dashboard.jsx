@@ -10,17 +10,19 @@ const Dashboard = () => {
   return (
     <main className="dashboard">
             <Cards />
-            <div className="mid-dash">
-              <People/>
-              <div className="chart">
-                <div className="timeline">
-                  <h1>Highlight</h1>
-                  <button typeof="text">month</button>
+            <div className="mid_dash">
+              <div className="people_section">
+               <People/>
+                <div className="chart">
+                  <div className="timeline">
+                    <h1>Highlight</h1>
+                    <button typeof="text">month</button>
+                  </div>
+                  <img src={chart} alt="chart.png" />
                 </div>
-                <img src={chart} alt="chart.png" />
               </div>
+              <Histories/>
             </div>
-            <Histories/>
     </main>
   );
 }
