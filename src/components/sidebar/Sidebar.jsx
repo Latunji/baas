@@ -2,10 +2,11 @@ import {React,useState}from 'react';
 import logo from '../assets/logo.png'
 import './Sidebar.css';
 import email from '../assets/email.png'
-import { SidebarData } from '.';
+import { AccountSetting, SidebarData } from '.';
 
 const Sidebar = () => {
     const [selected, setSelected] = useState(0);
+    const [select, setSelect] = useState(0);
     
 
 
@@ -16,29 +17,57 @@ const Sidebar = () => {
         <img src={logo} alt="logo" />
       </div>
       <div className="menu">
-        {SidebarData.map((item, index) => {
-          return (
-            <div
-              className={selected === index ? " menu-item active" : "menu-item"}
-              key={index}
-              onClick={() => {
-                setSelected(index);
-              }}
-            >
-              <span>
-                <img src={item.icon} alt="icons" />
-                <span className='heading'>{item.heading}</span>
-              </span>
-            </div>
-          );
-        })}
+
+        <div className="menu_general">
+          <p>General</p>
+          {SidebarData.map((item, index) => {
+            return (
+              <div
+                className={
+                  selected === index ? " menu-item active" : "menu-item"
+                }
+                key={index}
+                onClick={() => {
+                  setSelected(index);
+                }}
+              >
+                <span>
+                  <img src={item.icon} alt="icons" />
+                  <span className="heading">{item.heading}</span>
+                </span>
+              </div>
+            );
+          })}
+        </div>
+        <div className="menu_account">
+          <p>Account</p>
+          {AccountSetting.map((item, index) => {
+            return (
+              <div
+                className={
+                  select === index ? " menu-item active" : "menu-item"
+                }
+                key={index}
+                onClick={() => {
+                  setSelect(index);
+                }}
+              >
+                <span>
+                  <img src={item.icon} alt="icons" />
+                  <span className="heading">{item.heading}</span>
+                </span>
+              </div>
+            );
+          })}
+        </div>
         <div className="user">
           <img src={email} />
-          <div className='username'>
+          <div className="username">
             <h2>Opeoluwa Samuel</h2>
             <p>Admin</p>
           </div>
         </div>
+        
       </div>
     </div>
   );
