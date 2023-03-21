@@ -6,12 +6,15 @@
     width: inherit;
     box-sizing: border-box;
     
+    
 }
 .baas_inner{
     /* display: flex;
     max-height: inherit; */
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
+    min-height: 0;
+    width: inherit;
 }
 .body{
     display: flex;

@@ -4,24 +4,24 @@ import Sidebar from '../sidebar/Sidebar';
 import Dashboard from './dash/Dashboard';
 import Payment from './dash/Payment';
 import Topbar from './dash/Topbar';
+import TransactionHistory from '../transaction/History';
+import Transactions from "../transaction/Transactions"
 
 const Baas = () => {
   return (
-    <div className="baas">
       <div className="baas_inner">
         <Sidebar />
         <div className="body">
-          <Topbar />
           <div className="dashboard_body ">
-            <div className="dash grid-col-span">
+            {/* <TransactionHistory/> */}
+            {/* <div className="dash grid-col-span">
               <Dashboard />
             </div>
-            <Payment />
+            <Payment /> */}
+            <Transactions/>
           </div>
         </div>
       </div>
-      
-    </div>
   );
 }
 

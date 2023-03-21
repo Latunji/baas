@@ -1,0 +1,60 @@
+.bill_sections{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    background-color: #fff;
+    margin: 1rem 1rem;
+    border-radius: 20px;
+    padding: 1rem 1rem;
+}
+
+/* Bill card */
+.bill_card{
+    display: flex;
+    gap: 0rem 1rem;
+    border: 1px #DEDEDE solid;
+    border-radius: 20px;
+    width: 200px;
+    height: 45px;
+    align-items: center;
+    align-content: flex-start;
+    padding: 0rem 1em;
+}
+.bill_card>img{
+    width: 30px;
+    height: 30px;  
+}
+
+
+/* Mobile Section */
+.bill_container{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.mobile{
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* Utility */
+.sections{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    gap: 1rem;
+    margin: 2rem 0rem;
+    justify-content: space-evenly;
+}
+.sections>h1{
+    font-size: 18px;
+}
+
+.section_content{
+    display: flex;
+    flex-direction: row;
+}
+
+
+

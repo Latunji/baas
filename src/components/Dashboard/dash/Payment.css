@@ -43,6 +43,7 @@
     align-items: center;
     gap: 1rem;
     height: 78px;
+    cursor: pointer;
 }
 .send-button{
     display: flex;
