@@ -3,12 +3,13 @@ import '../Transactions.css'
 import bank from "../../assets/dashboard/polaris.png";
 import money from "../../assets/dashboard/wallet.png";
 
-function PaymentMethod() {
+function PaymentMethod({closeModal}) {
   return (
     <section className="intra_transfar">
       <div className="transfer">
         <div className="heading">
           <h1>Select payment methods</h1>
+          <button>X</button>
         </div>
         <div className="divider" />
         <div className="select_payment_method">

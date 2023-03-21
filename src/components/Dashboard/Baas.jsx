@@ -12,13 +12,15 @@ const Baas = () => {
         <Sidebar />
         <div className="body">
           <Topbar />
-          <div className="dashboard_body">
-            <Dashboard />
+          <div className="dashboard_body ">
+            <div className="dash grid-col-span">
+              <Dashboard />
+            </div>
             <Payment />
           </div>
         </div>
       </div>
-      {/* <Transactions/> */}
+      
     </div>
   );
 }
