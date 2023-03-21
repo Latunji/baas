@@ -4,7 +4,6 @@ import Verification from "./components/Verf/Verification";
 import ForgotPass from "./components/forgot_pass/ForgotPassword";
 import CheckMail from "./components/forgot_pass/CheckMail";
 import NewPassword from "./components/forgot_pass/Newpass";
-import Dashboard from "./components/Dashboard/Baas";
 import BusinessInfo from "./components/User_info/BusinessInfo";
 import FinancialInfo from "./components/User_info/FinancialInfo";
 import KYC from "./components/User_info/KYC";
@@ -13,6 +12,7 @@ import SupportDoc from "./components/User_info/SupportDoc";
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
 import Baas from "./components/Dashboard/Baas";
+import TransfarSummary from "./components/transaction/baasTransfar/TransfarSummary"
 
 function App() {
   return (
@@ -45,6 +45,7 @@ function App() {
             {/* <Route path="userInfo" element={<ProfileInfo />} /> */}
             <Route path="setupProfile" element={<SetupProfile />} />
             <Route path="supportDoc" element={<SupportDoc />} />
+            <Route path="summary" element={<TransfarSummary/>}/>
 
             {/* If any route mismatches the upper 
         route endpoints then, redirect triggers 

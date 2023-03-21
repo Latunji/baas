@@ -5,6 +5,8 @@ import { TransfarData } from './baasTransfar/TransfarData';
 import BaasTransfar from './baasTransfar/BaasTransfar'
 import Topbar from '../Dashboard/dash/Topbar';
 import TransactionOptions from './TransactionOptions';
+import BankTransfar from './bankTransfar/BankTransfar';
+import International from './internationalTransfar/International'
 
 const Transactions = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -36,7 +38,7 @@ const Transactions = () => {
         </div>
       </div>
       <div className="modal_container">
-        {openModal && <BaasTransfar closeModal={setOpenModal} />}
+        {openModal && <BaasTransfar closeModal={setOpenModal} value={active}/>}
       </div>
     </div>
   );
