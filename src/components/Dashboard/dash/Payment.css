@@ -95,7 +95,7 @@
     border: 1px solid #BFBFBF;
     border-radius: 10px;
 }
-.quick-transfers>button{
+.send_button{
     justify-content: center;
     align-items: center;
     padding: 10px 18px;
@@ -105,4 +105,15 @@
     color: #FFFFFF;
     font-size: 16px;
     border-radius: 10px;
+    border: none;
+}
+.uData{
+    box-sizing: border-box;
+    width: 293px;
+    height: 40px;
+    background: #FFFFFF;
+    justify-content: center;
+    border: 1px solid #BFBFBF;
+    border-radius: 10px;
+    text-align: center;
 }

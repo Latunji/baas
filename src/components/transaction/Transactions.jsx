@@ -3,6 +3,7 @@ import './Transactions.css'
 import Sidebar from '../sidebar/Sidebar';
 import { TransfarData, TransfarType } from './baasTransfar/TransfarData';
 import BaasTransfar from './baasTransfar/BaasTransfar'
+import International from './internationalTransfar/International';
 
 const Transactions = () => {
   const [selected, setSelected] = useState(0);
@@ -32,7 +33,7 @@ const Transactions = () => {
           </div>
           <div className="divider" />
           <span className="make_transfar">
-            {TransfarData.map((type) => {
+            {TransfarData.map((type,id) => {
               return (
                 <div
                   className="select_transfar_type"
@@ -52,6 +53,7 @@ const Transactions = () => {
           </div>
         </div>
       </div>
+      <International/>
     </div>
   );
 }

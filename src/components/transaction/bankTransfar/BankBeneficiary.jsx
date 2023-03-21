@@ -1,13 +1,19 @@
-import React from "react";
+import React from 'react';
 import "../Transactions.css";
-function Beneficiaries({closeModal}) {
-  
+
+function BankBeneficiary({closeModal}) {
   return (
     <section className="intra_transfar">
       <div className="transfar">
         <div className="heading">
           <h1>Fund Transfar</h1>
-          <button onClick={() => { closeModal(false);}}> X </button>
+          <button
+            onClick={() => {
+              closeModal(false);
+            }}
+          >
+            X
+          </button>
         </div>
         <div className="divider" />
         <div className="transfar_section"></div>
@@ -40,4 +46,4 @@ function Beneficiaries({closeModal}) {
   );
 }
 
-export default Beneficiaries;
+export default BankBeneficiary
