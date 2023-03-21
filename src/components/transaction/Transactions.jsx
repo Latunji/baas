@@ -53,7 +53,7 @@ const Transactions = () => {
           </div>
         </div>
       </div>
-      <International/>
+      {/* <International/> */}
     </div>
   );
 }

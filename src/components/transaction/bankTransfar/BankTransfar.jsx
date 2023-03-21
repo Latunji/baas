@@ -1,5 +1,5 @@
 import React from 'react';
-import './Transactions.css'
+import '../Transactions.css'
 
 function BankTransfar() {
   return (
@@ -8,9 +8,9 @@ function BankTransfar() {
         <div className="heading">
           <h1>Fund Transfar</h1>
           <button
-            onClick={() => {
-              closeModal(false);
-            }}
+            // onClick={() => {
+            //   closeModal(false);
+            // }}
           >
             X
           </button>

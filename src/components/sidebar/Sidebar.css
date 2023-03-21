@@ -9,6 +9,9 @@
     transition: all 300ms ease;
     margin:0rem;
 }
+.icon{
+    margin-right: 10px;
+}
 .logo{
     display: flex;
     height: 5rem;

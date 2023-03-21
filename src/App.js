@@ -15,7 +15,7 @@ import ProfileInfo from "./components/User_info/ProfileInfo";
 // import ProfileInfo from "./components/User_info/ProfileInfo";
 import SetupProfile from "./components/User_info/SetupProfile";
 import SupportDoc from "./components/User_info/SupportDoc";
-import BankTransfar from "./components/transaction/BankTransfar";
+import BankTransfar from "./components/transaction/bankTransfar/BankTransfar";
 import Transactions from "./components/transaction/Transactions";
 import BaasTransfar from "./components/transaction/baasTransfar/PaymentMethod";
 import Beneficiaries from "./components/transaction/baasTransfar/Beneficiaries";

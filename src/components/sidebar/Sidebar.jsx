@@ -32,8 +32,7 @@ const Sidebar = () => {
                 }}
               >
                 <span>
-                  <img src={item.icon} alt="icons" />
-                  <span className="heading">{item.heading}</span>
+                  <p className="heading"><span> <img src={item.icon} alt="icons" className='icon' /></span>{item.heading}</p>
                 </span>
               </div>
             );
@@ -52,10 +51,10 @@ const Sidebar = () => {
                   setSelect(index);
                 }}
               >
-                <span>
-                  <img src={item.icon} alt="icons" />
-                  <span className="heading">{item.heading}</span>
-                </span>
+             
+                  <p className="heading"><span>
+                  <img src={item.icon} alt="icons" className='icon' />{item.heading}</span></p>
+        
               </div>
             );
           })}
