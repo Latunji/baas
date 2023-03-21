@@ -25,22 +25,27 @@ const Payment = () => {
       </div>
       <div className="quick-transfers">
         <h1>Quick Transfars</h1>
-        <select className="reciever">
-          <option selected disabled>
-            {QuickTransfar.map((users) => {
-              return (
-                <div className="uData">
+        <select className="reciever" id="reciever">
+          <option selected disabled>Select Reciever</option>
+          {QuickTransfar.map((users) => {
+            return (
+              <option className="reciever" value={users.name}>
+                <div>
                   <img src={users.icon} alt="" />
                   {users.name}
                 </div>
-              );
-            })}
-          </option>
+              </option>
+            );
+          })}
         </select>
-        <input type='text' placeholder='
-        Enter Amount' className="sendamount"/>
-        <input type='text' placeholder=' ' className="sendnote"/>
-        <button>Send Money</button>
+        <input
+          type="text"
+          placeholder="
+        Enter Amount"
+          className="sendamount"
+        />
+        <input type="text" placeholder=" " className="sendnote" />
+        <input type="submit" className="send_button" value="Send Money" />
       </div>
     </div>
   );

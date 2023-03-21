@@ -1,18 +1,21 @@
 import React from 'react';
-import '../Transactions.css';
+import './Transactions.css'
 
-function BaasTransfar({closeModal}) {
-
+function BankTransfar() {
   return (
-      <section className="intra_transfar">
-          <div className="transfar_section"></div>
-        <div className="transfar">
-
-          <div className="heading">
-            <h1>Fund Transfar</h1>
-            <button onClick={() =>{closeModal(false)}}>X</button>
-          </div>
-          <div className="divider" />
+    <section className="intra_transfar">
+      <div className="transfar">
+        <div className="heading">
+          <h1>Fund Transfar</h1>
+          <button
+            onClick={() => {
+              closeModal(false);
+            }}
+          >
+            X
+          </button>
+        </div>
+        <div className="divider" />
           <div className="t_body">
             <div className="balance">
               <p>Account Balance</p>
@@ -20,8 +23,8 @@ function BaasTransfar({closeModal}) {
             </div>
             <form action="/" className="transfar_form">
               <div className="transfar_intro">
-                <h1>Intrabank transfer</h1>
-                <p>Send money to BaaS friends and family.</p>
+                <h1>Interbank transfer</h1>
+                <p>Send money to other banks.</p>
               </div>
               <div className="transfar_form">
                 <label>Account Number</label>
@@ -31,8 +34,7 @@ function BaasTransfar({closeModal}) {
                 <label>Amount</label>
                 <input type="text" placeholder="Amount" />
               </div>
-              <input type="text" placeholder="note" className='note' />
-              
+              <input type="text" placeholder="note" className="note" />
 
               <p>or</p>
               <form className="beneficiary">
@@ -44,9 +46,9 @@ function BaasTransfar({closeModal}) {
               </form>
             </form>
           </div>
-        </div>
-      </section>
+      </div>
+    </section>
   );
 }
 
-export default BaasTransfar;
+export default BankTransfar
