@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Transactions.css'
 
-function BankTransfar() {
+function BankTransfar({closeModal}) {
   return (
     <section className="intra_transfar">
       <div className="transfar">
@@ -16,7 +16,7 @@ function BankTransfar() {
           </button>
         </div>
         <div className="divider" />
-          <div className="t_body">
+          <div className="t_body" id='id2'>
             <div className="balance">
               <p>Account Balance</p>
               <h3>₦ 1,340,040.00 </h3>

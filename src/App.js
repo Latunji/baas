@@ -24,7 +24,10 @@ import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
 import Baas from "./components/Dashboard/Baas";
 import PaymentMethod from "./components/transaction/baasTransfar/PaymentMethod";
-
+import BillPayment from "./components/transaction/BillPayment/BillPayment";
+import Bills from "./components/transaction/BillPayment/Bills";
+import History from "./components/transaction/History";
+import Sidebar2 from "./components/sidebar/Sidebar2";
 function App() {
   return (
     <main className="app">
@@ -58,15 +61,19 @@ function App() {
             <Route path="setupProfile" element={<SetupProfile />} />
             <Route path="supportDoc" element={<SupportDoc />} />
             <Route path="passwordReset" element={<PasswordReset />} />
+            <Route path="summary" element={<TransferSummary/>}/>
 
             <Route path="emailVerification" element={<EmailVerification />} />
             <Route path="verified" element={<Verified />} />
             <Route path="baasTransfer" element={<BaasTransfar />} />
             <Route path="beneficiaries" element={<Beneficiaries />} />
             <Route path="paymentMethod" element={<PaymentMethod />} />
-            <Route path="transferSummary" element={<TransferSummary />} />
             <Route path="bankTransfer" element={<BankTransfar />} />
             <Route path="transactions" element={<Transactions />} />
+            <Route path="billPayment" element={<BillPayment />} />
+            <Route path="bills" element={<Bills />} />
+            <Route path="transactionHistory" element={<History />} />
+            <Route path="sidebar2" element={<Sidebar2 />} />
             {/* If any route mismatches the upper 
         route endpoints then, redirect triggers 
         and redirects app to home component with to="/" */}

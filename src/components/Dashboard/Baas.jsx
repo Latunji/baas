@@ -14,11 +14,11 @@ const Baas = () => {
         <div className="body">
           <div className="dashboard_body ">
             {/* <TransactionHistory/> */}
-            {/* <div className="dash grid-col-span">
+             <div className="dash grid-col-span">
               <Dashboard />
             </div>
-            <Payment /> */}
-            <Transactions/>
+            <Payment /> 
+            {/* <Transactions/> */}
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import {React,useState}from 'react';
 import logo from '../assets/logo.png'
-import './Sidebar.css';
+import './Sidebar2.css';
 import email from '../assets/email.png'
 import { AccountSetting, SidebarData } from '.';
 import { Link } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar2 = () => {
     const [selected, setSelected] = useState(0);
     const [select, setSelect] = useState(0);
     
@@ -73,4 +73,4 @@ const Sidebar = () => {
   );
 }
 
-export default Sidebar
+export default Sidebar2

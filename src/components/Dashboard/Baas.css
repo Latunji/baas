@@ -2,11 +2,10 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-left: 150px;
+    margin-left: 200px;
     max-height: inherit;
     width: inherit;
     box-sizing: border-box;
-    
     
 }
 .baas_inner{
@@ -14,8 +13,7 @@
     max-height: inherit; */
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
-    min-height: 0;
-    width: inherit;
+    margin-left: 150px;
 }
 .body{
     display: flex;

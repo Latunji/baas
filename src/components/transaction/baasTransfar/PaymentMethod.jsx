@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Transactions.css'
 import bank from "../../assets/dashboard/polaris.png";
-import money from "../../assets/dashboard/wallet.png";
+import wallet from "../../assets/dashboard/wallet.png";
 
 function PaymentMethod({closeModal}) {
   return (
@@ -14,7 +14,7 @@ function PaymentMethod({closeModal}) {
         <div className="divider" />
         <div className="select_payment_method">
           <div className="payment_option">
-            <img src={money} alt="wallet.png" />
+            <img src={wallet} alt="wallet.png" />
             <div className="pay_content">
                 <p>Available Balance</p>
                 <h1>₦ 1,340,040.00 </h1>
