@@ -4,19 +4,19 @@ import transfar from "../assets/bank.png";
 export const TransfarData = [
   {
     icon: transfar,
-    id:0,
+    id:"1",
     title: "Intra Bank transfar",
     body: "Send money to people using Baas",
   },
   {
     icon: transfar,
-    id:1,
+    id:"2",
     title: "Inter Bank transfar",
     body: "Send money to other banks",
   },
   {
     icon: transfar,
-    id:2,
+    id:"3",
     title: "International transfar",
     body: "Send money outside Nigeria",
   },

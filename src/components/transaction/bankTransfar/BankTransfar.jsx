@@ -24,17 +24,12 @@ function BankTransfar({closeModal}) {
           <div className="transfar_body">
             <div className="balance">
               <p>Account Balance</p>
-              <h3>₦ 1,340,040.00 </h3>
+              <h1>₦ 1,340,040.00 </h1>
             </div>
             <form action="/" className="transfar_form">
               <div className="form_head">
                 <h1>Interbank transfer</h1>
-                <p>Send money to other banks.</p>
-              </div>
-
-              <div className="transfar_form">
-                <label>Account Number</label>
-                <input type="text" placeholder="Enter Account Number" />
+                <p>Send money to BaaS friends and family.</p>
               </div>
               <div className="form">
                 <label>Account Number</label>
@@ -66,7 +61,7 @@ function BankTransfar({closeModal}) {
       )}
       {modalForm === "id2" && (
         <div className="transfar">
-          <div className="heading">
+          <div className="header">
             <h1>Payment Summary</h1>
             <button
               onClick={() => {
@@ -109,7 +104,7 @@ function BankTransfar({closeModal}) {
       )}
       {modalForm === "id3" && (
         <div className="transfar">
-          <div className="heading">
+          <div className="header">
             <h1>Select payment methods</h1>
             <button>X</button>
           </div>
@@ -144,7 +139,7 @@ function BankTransfar({closeModal}) {
       )}
       {modalForm === "id4" && (
         <div className="pin_sec">
-          <div className="heading">
+          <div className="header">
             <h1>Transaction Pin</h1>
             <button
               onClick={() => {

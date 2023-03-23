@@ -71,7 +71,7 @@ function International({closeModal}) {
       )}
       {modalForm === "id2" && (
         <div className="transfar">
-          <div className="heading">
+          <div className="header">
             <h1>Payment Summary</h1>
             <p>Cancel</p>
           </div>
@@ -117,7 +117,7 @@ function International({closeModal}) {
       )}
       {modalForm === "id3" && (
         <div className="transfar">
-          <div className="heading">
+          <div className="header">
             <h1>Select payment methods</h1>
             <button>X</button>
           </div>
@@ -147,6 +147,34 @@ function International({closeModal}) {
             >
               Next
             </button>
+          </div>
+        </div>
+      )}
+      {modalForm === "id4" && (
+        <div className="pin_sec">
+          <div className="header">
+            <h1>Transaction Pin</h1>
+            <button
+              onClick={() => {
+                closeModal(false);
+              }}
+            >
+              X
+            </button>
+          </div>
+          <hr className="divider" />
+          <div className="pin_form">
+            <p>Enter your transaction pin</p>
+            <h1>#5000</h1>
+            <div className="pin_input">
+              <form action="" className="pin_in">
+                <input type="text" className="pin" />
+                <input type="text" className="pin" />
+                <input type="text" className="pin" />
+                <input type="text" className="pin" />
+              </form>
+              <input type="button" value="Confirm" />
+            </div>
           </div>
         </div>
       )}

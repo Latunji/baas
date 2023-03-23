@@ -19,6 +19,7 @@
     justify-content: center;
     margin-bottom: 1rem;
     width: 500px;
+    height: 100vh;
 }
 .header{
     display: flex;
@@ -112,7 +113,7 @@
     background-color: #E9E6F4;
     margin: 1rem auto;
 }
-form select{
+.form select{
     width: 320px;
     height: 44px;
     border: 1px solid #BFBFBF;
@@ -202,6 +203,18 @@ form select{
     font-size: 14px;
 }
 
+.pin-sec{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 500px;
+    height: 100vh;
+}
+
 .pin_form{
     display: flex;
     flex-direction: column;
@@ -213,19 +226,12 @@ form select{
     gap: 2rem;
     align-items: center;
 }
-.pin_input{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+.pin{
+    width: 50px;
+    height: 50px;
+    color: #BFBFBF;
+    border-radius: 3px;
 }
-input[type="button"]{
-    width: 240px;
-    height: 44px;
-    background: #A499D1;
-    border: 1px solid #A499D1;
-    border-radius: 8px;
-} 
 input[type="button"]{
     width: 240px;
     height: 44px;

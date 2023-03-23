@@ -165,7 +165,7 @@ function BaasTransfar({closeModal}) {
             </button>
           </div>
           <hr className="divider" />
-          <div className="pin_form">
+          <div className="transfar_body">
             <p>Enter your transaction pin</p>
             <h1>#5000</h1>
             <div className="pin_input">

@@ -31,12 +31,12 @@ const Transactions = () => {
                 <div
                   className="select_transfar_type"
                   onClick={() => {
-                    if (type.id === 0) {
+                    if (type.id === "1") {
                       setOpenModal1(true);
-                    } else if (type.id === 1) {
-                      setOpenModal1(true);
-                    } else {
+                    } else if (type.id === "2") {
                       setOpenModal2(true);
+                    } else {
+                      setOpenModal3(true);
                     }
                   }}
                 >
