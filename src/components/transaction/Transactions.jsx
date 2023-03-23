@@ -1,39 +1,24 @@
 import {React, useState} from 'react'
 import './Transactions.css'
 import Sidebar from '../sidebar/Sidebar';
-import { TransfarData, TransfarType } from './baasTransfar/TransfarData';
+import { TransfarData } from './baasTransfar/TransfarData';
 import BaasTransfar from './baasTransfar/BaasTransfar'
-import International from './internationalTransfar/International';
+import Topbar from '../Dashboard/dash/Topbar';
+import TransactionOptions from './TransactionOptions';
 
 const Transactions = () => {
-  const [selected, setSelected] = useState(0);
   const [openModal, setOpenModal] = useState(false);
+  const [active, setActive] = useState("id")
 
   return (
     <div className="transaction">
-      <Sidebar />
       <div className="fund_transfar">
-        <h1>Transfer</h1>
+       <Topbar />
         <div className="transfar_options">
-          <div className="transfar_type">
-            {TransfarType.map((type, id) => {
-              return (
-                <div
-                  className={
-                    selected === id ? " select_type active" : "select_type"
-                  }
-                  onClick={() => {
-                    setSelected(id);
-                  }}
-                >
-                  <p>{type.heading}</p>
-                </div>
-              );
-            })}
-          </div>
+          <TransactionOptions />
           <div className="divider" />
           <span className="make_transfar">
-            {TransfarData.map((type,id) => {
+            {TransfarData.map((type, id) => {
               return (
                 <div
                   className="select_transfar_type"
@@ -48,12 +33,11 @@ const Transactions = () => {
               );
             })}
           </span>
-          <div className="modal_container">
-            {openModal && <BaasTransfar closeModal={setOpenModal}/>}
-          </div>
         </div>
       </div>
-      {/* <International/> */}
+      <div className="modal_container">
+        {openModal && <BaasTransfar closeModal={setOpenModal} />}
+      </div>
     </div>
   );
 }

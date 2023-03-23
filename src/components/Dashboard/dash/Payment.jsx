@@ -44,7 +44,7 @@ const Payment = () => {
         Enter Amount"
           className="sendamount"
         />
-        <input type="text" placeholder=" " className="sendnote" />
+        <textarea type="text" placeholder=" " className="sendnote" />
         <input type="submit" className="send_button" value="Send Money" />
       </div>
     </div>
