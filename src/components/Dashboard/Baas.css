@@ -1,26 +1,32 @@
-.baas{
+/* .baas{
     display: flex;
-    flex-direction: row;
     gap: 1rem;
     max-height: inherit;
     width: inherit;
     box-sizing: border-box;
     
     
-}
-.baas_inner{
+} */
+.baas{
     /* display: flex;
     max-height: inherit; */
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
-    min-height: 0;
+    height: 100vh;
     width: inherit;
+    position: absolute;
+    top: 0px;
+    
+    background-color: var(--background);
 }
 .body{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    position: absolute;
+    left: -480px;
+    background-color: var(--background);
 }
 .dashboard_body{
     /* display: flex;

@@ -12,7 +12,7 @@ import SupportDoc from "./components/User_info/SupportDoc";
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
 import Baas from "./components/Dashboard/Baas";
-import TransfarSummary from "./components/transaction/baasTransfar/TransfarSummary"
+import Transactions from "./components/transaction/Transactions";
 
 function App() {
   return (
@@ -45,7 +45,7 @@ function App() {
             {/* <Route path="userInfo" element={<ProfileInfo />} /> */}
             <Route path="setupProfile" element={<SetupProfile />} />
             <Route path="supportDoc" element={<SupportDoc />} />
-            <Route path="summary" element={<TransfarSummary/>}/>
+            <Route path="transactions" element={<Transactions/>}/>
 
             {/* If any route mismatches the upper 
         route endpoints then, redirect triggers 

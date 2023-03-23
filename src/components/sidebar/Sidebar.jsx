@@ -2,6 +2,7 @@ import {React,useState}from 'react';
 import logo from '../assets/logo.png'
 import './Sidebar.css';
 import email from '../assets/email.png'
+import { Link } from 'react-router-dom';
 import { AccountSetting, SidebarData } from '.';
 
 const Sidebar = () => {
@@ -12,50 +13,49 @@ const Sidebar = () => {
 
 
   return (
-    <div className="sidebar">
+    <nav className="sidebar">
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
       <div className="menu">
 
-        <div className="menu_general">
+        <ul className="menu_general">
           <p>General</p>
           {SidebarData.map((item, index) => {
             return (
-              <div
-                className={
-                  selected === index ? " menu-item active" : "menu-item"
-                }
-                key={index}
-                onClick={() => {
-                  setSelected(index);
-                }}
-              >
-                <span>
-                  <img src={item.icon} alt="icons" />
-                  <span className="heading">{item.heading}</span>
-                </span>
+              <div className="menu-items">
+                <Link to={item.path}>
+                  <div className={selected === index ? " item active" : "item"
+                    } key={index} onClick={() => {setSelected(index);}}>
+                    <span>
+                      <img src={item.icon} alt="icons" />
+                      <span className="title">{item.heading}</span>
+                    </span>
+                  </div>
+                </Link>
               </div>
             );
           })}
-        </div>
+        </ul>
         <div className="menu_account">
           <p>Account</p>
           {AccountSetting.map((item, index) => {
             return (
               <div
                 className={
-                  select === index ? " menu-item active" : "menu-item"
+                  select === index ? " item active" : "item"
                 }
                 key={index}
                 onClick={() => {
                   setSelect(index);
                 }}
               >
-                <span>
-                  <img src={item.icon} alt="icons" />
-                  <span className="heading">{item.heading}</span>
-                </span>
+                <Link to={item.path}>
+                  <span>
+                    <img src={item.icon} alt="icons" />
+                    <span className="heading">{item.heading}</span>
+                  </span>
+                </Link>
               </div>
             );
           })}
@@ -69,7 +69,7 @@ const Sidebar = () => {
         </div>
         
       </div>
-    </div>
+    </nav>
   );
 }
 

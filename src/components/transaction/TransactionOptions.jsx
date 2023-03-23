@@ -1,9 +1,10 @@
-import {React, useState} from 'react';
-import { TransfarType } from "./baasTransfar/TransfarData";
+import { React, useState } from "react";
+import { TransfarType } from "./TransfarData";
 import "./Transactions.css";
 
 function TransactionOptions() {
-    const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(0);
+  const [pageChange, setPageChange] = useState("page1");
   return (
     <div>
       <div className="transfar_type">
@@ -26,4 +27,4 @@ function TransactionOptions() {
   );
 }
 
-export default TransactionOptions
+export default TransactionOptions;

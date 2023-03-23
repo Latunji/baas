@@ -1,19 +1,22 @@
-import transfar from "../../assets/bank.png";
+import transfar from "../assets/bank.png";
 
 
 export const TransfarData = [
   {
     icon: transfar,
+    id:0,
     title: "Intra Bank transfar",
     body: "Send money to people using Baas",
   },
   {
     icon: transfar,
-    title: "Intra Bank transfar",
+    id:1,
+    title: "Inter Bank transfar",
     body: "Send money to other banks",
   },
   {
     icon: transfar,
+    id:2,
     title: "International transfar",
     body: "Send money outside Nigeria",
   },
@@ -28,5 +31,24 @@ export const TransfarType = [
   },
   {
     heading: "Transaction History",
+  },
+];
+
+export const SummaryData = [
+  {
+    title: "Name",
+    info: "DAVID OGUNMODEDE",
+  },
+  {
+    title: "Amount",
+    info: "#5,0000",
+  },
+  {
+    title: "Fee",
+    info: "#0.00",
+  },
+  {
+    title: "Transfar Type",
+    info: "One Time",
   },
 ];

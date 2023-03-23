@@ -1,71 +1,155 @@
-import React from "react";
-import "../Transactions.css";
+import {React, useState} from "react";
+import '../Modal.css'
+import bank from "../../assets/dashboard/polaris.png";
+import money from "../../assets/dashboard/wallet.png";
 
 function International({closeModal}) {
+  const [modalForm, setModalForm] = useState("id")
   return (
-    <section className="intra_transfar">
-      <div className="transfar">
-        <div className="heading">
-          <h1>Fund Transfar</h1>
+    <section className="modal">
+      {modalForm === "id" && (
+        <div className="transfar">
+          <div className="header">
+            <h1>Fund Transfar</h1>
 
-          <button
-            onClick={() => {
-              closeModal(false);
-            }}
-          >
-            X
-          </button>
-        </div>
-        <div className="divider" />
-        <div className="t_body">
+            <button
+              onClick={() => {
+                closeModal(false);
+              }}
+            >
+              X
+            </button>
+          </div>
+          <hr className="divider" />
+          <div className="transfar_body">
             <div className="balance">
-            <p>Account Balance</p>
-            <h3>₦ 1,340,040.00 </h3>
+              <p>Account Balance</p>
+              <h1>₦ 1,340,040.00 </h1>
             </div>
             <form action="/" className="transfar_form">
-            <div className="transfar_intro">
+              <div className="form_head">
                 <h1>International transfer</h1>
                 <p>Send money to other banks.</p>
-            </div>
-            <div className="transfar_form">
+              </div>
+              <div className="form">
                 <label>Account Number</label>
                 <input type="text" placeholder="Enter Account Number" />
-            </div>
-            <div className="transfar_form">
+
                 <select value="Select Beneficiary">
-                <label>Bank</label>
-                <option value="bank">Bank</option>
+                  <label>Bank</label>
+                  <option value="bank">Bank</option>
                 </select>
-                <div className="transfar_form">
                 <label>Reciepiant Name</label>
                 <input type="text" placeholder="Recipient Name" />
-                </div>
-                <div className="transfar_form">
+
                 <label>Bank Swift Code</label>
                 <input type="text" placeholder="Swift Code" />
-                </div>
-                <div className="transfar_form">
+
                 <label>Amount</label>
                 <input type="text" placeholder="Amountr" />
-                </div>
-            </div>
-            <input type="text" placeholder="note" className="note" />
 
-            <p>or</p>
-            <form className="beneficiary">
-                <select value="Select Beneficiary">
+                <input type="text" placeholder="note" className="note" />
+              </div>
+
+              <p>or</p>
+              <form className="form">
                 <label>Beneficiaries</label>
-                <option value="Select Beneficiary">Select Beneficiary</option>
-                </select>
-                <select value="Transfar Type">
+                <select placeholder="Select Beneficiary" />
                 <label>Transfar Type</label>
-                <option value="One Time">One Time</option>
-                </select>
-                <button>Next</button>
+                <select placeholder="One Time" />
+                <button
+                  onClick={() => {
+                    setModalForm("id2");
+                  }}
+                >
+                  Next
+                </button>
+              </form>
             </form>
-            </form>
+          </div>
         </div>
-      </div>
+      )}
+      {modalForm === "id2" && (
+        <div className="transfar">
+          <div className="heading">
+            <h1>Payment Summary</h1>
+            <p>Cancel</p>
+          </div>
+          <div className="divider" />
+          <p>back</p>
+          <div className="summary">
+            <div className="summary_body">
+              <p>Name</p>
+              <p>DAVID OGUNMODEDE</p>
+            </div>
+            <div className="summary_body">
+              <p>Amount</p>
+              <p>#5,000.00</p>
+            </div>
+            <div className="summary_body">
+              <p>Fee</p>
+              <p>#0.00</p>
+            </div>
+            <div className="summary_body">
+              <p>Transfar Type</p>
+              <p>One Time</p>
+            </div>
+            <label>Payment Method</label>
+            <div className="pay_card_body">
+              <div className="payment_method">
+                <img src="../../assets/dashboard/wallet.png" alt="wallet.png" />
+                <div className="pay_card">
+                  <p>Available Balance</p>
+                  <h1>₦ 1,340,040.00 </h1>
+                </div>
+              </div>
+              <button
+                className="pay-button"
+                onClick={() => {
+                  setModalForm("id3");
+                }}
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {modalForm === "id3" && (
+        <div className="transfar">
+          <div className="heading">
+            <h1>Select payment methods</h1>
+            <button>X</button>
+          </div>
+          <div className="divider" />
+          <div className="select_payment_method">
+            <div className="payment_option">
+              <img src={money} alt="wallet.png" />
+              <div className="pay_content">
+                <p>Available Balance</p>
+                <h1>₦ 1,340,040.00 </h1>
+              </div>
+            </div>
+            <div className="payment_option">
+              <img src={bank} alt="polaris.png" />
+              <div className="pay_content">
+                <p>POLARIS BANK PLC</p>
+                <h1>**** 7202</h1>
+              </div>
+            </div>
+          </div>
+          <div className="pay_card_body">
+            <button
+              className="pay-button"
+              onClick={() => {
+                setModalForm("id4");
+              }}
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

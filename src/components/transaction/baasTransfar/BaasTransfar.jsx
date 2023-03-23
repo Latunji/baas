@@ -1,17 +1,18 @@
 import React from 'react';
-import '../Transactions.css';
+import '../Modal.css';
 import { useState } from 'react';
 import bank from "../../assets/dashboard/polaris.png";
 import money from "../../assets/dashboard/wallet.png";
+import { SummaryData } from '../TransfarData';
 
 function BaasTransfar({closeModal}) {
   const [change, setChange] = useState("id")
 
   return (
-    <section className="intra_transfar">
+    <section className="modal">
       {change === "id" && (
         <div className="transfar">
-          <div className="heading">
+          <div className="header">
             <h1>Fund Transfar</h1>
             <button
               onClick={() => {
@@ -21,29 +22,29 @@ function BaasTransfar({closeModal}) {
               X
             </button>
           </div>
-          <div className="divider" />
-          <div className="t_body">
+          <hr className="divider" />
+          <div className="transfar_body">
             <div className="balance">
               <p>Account Balance</p>
-              <h3>₦ 1,340,040.00 </h3>
+              <h1>₦ 1,340,040.00 </h1>
             </div>
             <form action="/" className="transfar_form">
-              <div className="transfar_intro">
+              <div className="form_head">
                 <h1>Intrabank transfer</h1>
                 <p>Send money to BaaS friends and family.</p>
               </div>
-              <div className="transfar_form">
+              <div className="form">
                 <label>Account Number</label>
                 <input type="text" placeholder="Enter Account Number" />
-              </div>
-              <div className="transfar_form">
+
                 <label>Amount</label>
                 <input type="text" placeholder="Amount" />
+
+                <input type="text" placeholder="note" className="note" />
               </div>
-              <input type="text" placeholder="note" className="note" />
 
               <p>or</p>
-              <form className="beneficiary">
+              <form className="form">
                 <label>Beneficiaries</label>
                 <select placeholder="Select Beneficiary" />
                 <label>Transfar Type</label>
@@ -62,61 +63,76 @@ function BaasTransfar({closeModal}) {
       )}
       {change === "id2" && (
         <div className="transfar">
-          <div className="heading">
+          <div className="header">
             <h1>Payment Summary</h1>
-            <p>Cancel</p>
+            <button
+              onClick={() => {
+                closeModal(false);
+              }}
+            >
+              X
+            </button>
           </div>
-          <div className="divider" />
-          <p>back</p>
+          <hr className="divider" />
+          <p
+            onClick={() => {
+              setChange("id");
+            }}
+          >
+            back
+          </p>
           <div className="summary">
-            <div className="summary_body">
-              <p>Name</p>
-              <p>DAVID OGUNMODEDE</p>
-            </div>
-            <div className="summary_body">
-              <p>Amount</p>
-              <p>#5,000.00</p>
-            </div>
-            <div className="summary_body">
-              <p>Fee</p>
-              <p>#0.00</p>
-            </div>
-            <div className="summary_body">
-              <p>Transfar Type</p>
-              <p>One Time</p>
-            </div>
-            <label>Payment Method</label>
-            <div className="pay_card_body">
-              <div className="payment_method">
-                <img src="../../assets/dashboard/wallet.png" alt="wallet.png" />
+            {SummaryData.map((info) => {
+              return (
+                <div className="summary_info">
+                  <p>{info.title} </p>
+                  <p>{info.info}</p>
+                </div>
+              );
+            })}
+            <div className="payment_card">
+              <label>Payment Method</label>
+              <div className="card_body">
                 <div className="pay_card">
                   <p>Available Balance</p>
                   <h1>₦ 1,340,040.00 </h1>
                 </div>
               </div>
-              <button className="pay-button" onClick={() =>{
-                setChange("id3")
-              }}>Next</button>
+              <button
+                onClick={() => {
+                  setChange("id3");
+                }}
+              >
+                Next
+              </button>
             </div>
           </div>
         </div>
       )}
+      
+      {/* payment method */}
       {change === "id3" && (
         <div className="transfar">
-          <div className="heading">
+          <div className="header">
             <h1>Select payment methods</h1>
-            <button>X</button>
+            <button
+              onClick={() => {
+                closeModal(false);
+              }}
+            >
+              X
+            </button>
           </div>
-          <div className="divider" />
-          <div className="select_payment_method">
-            <div className="payment_option">
+          <hr className="divider" />
+          <div className="select_payment">
+            <div className="options">
               <img src={money} alt="wallet.png" />
-              <div className="pay_content">
+              <div className="col">
                 <p>Available Balance</p>
                 <h1>₦ 1,340,040.00 </h1>
               </div>
             </div>
-            <div className="payment_option">
+            <div className="options">
               <img src={bank} alt="polaris.png" />
               <div className="pay_content">
                 <p>POLARIS BANK PLC</p>
@@ -125,15 +141,20 @@ function BaasTransfar({closeModal}) {
             </div>
           </div>
           <div className="pay_card_body">
-            <button className="pay-button" onClick={() =>{
-              setChange("id4")
-            }}>Next</button>
+            <button
+              className="pay-button"
+              onClick={() => {
+                setChange("id4");
+              }}
+            >
+              Next
+            </button>
           </div>
         </div>
       )}
       {change === "id4" && (
-        <div className="pin_sec">
-          <div className="heading">
+        <div className="transfar">
+          <div className="header">
             <h1>Transaction Pin</h1>
             <button
               onClick={() => {
@@ -143,7 +164,7 @@ function BaasTransfar({closeModal}) {
               X
             </button>
           </div>
-          <div className="divider" />
+          <hr className="divider" />
           <div className="pin_form">
             <p>Enter your transaction pin</p>
             <h1>#5000</h1>

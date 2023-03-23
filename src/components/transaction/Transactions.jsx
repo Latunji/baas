@@ -1,31 +1,43 @@
-import {React, useState} from 'react'
-import './Transactions.css'
-import Sidebar from '../sidebar/Sidebar';
-import { TransfarData } from './baasTransfar/TransfarData';
-import BaasTransfar from './baasTransfar/BaasTransfar'
-import Topbar from '../Dashboard/dash/Topbar';
-import TransactionOptions from './TransactionOptions';
-import BankTransfar from './bankTransfar/BankTransfar';
-import International from './internationalTransfar/International'
+import { React, useState } from "react";
+import "./Transactions.css";
+import Sidebar from "../sidebar/Sidebar";
+import { TransfarData } from "./TransfarData";
+import Topbar from "../Dashboard/dash/Topbar";
+
+import TransactionOptions from "./TransactionOptions";
+import BaasTransfar from "./baasTransfar/BaasTransfar";
+import BankTransfar from "./bankTransfar/BankTransfar";
+import International from "./internationalTransfar/International";
+
 
 const Transactions = () => {
-  const [openModal, setOpenModal] = useState(false);
-  const [active, setActive] = useState("id")
+  const TransfarType = ["baas", "bank", 'international']
+  const [openModal1, setOpenModal1] = useState(false);
+  const [openModal2, setOpenModal2] = useState(false);
+  const [openModal3, setOpenModal3] = useState(false);
 
   return (
     <div className="transaction">
-      <div className="fund_transfar">
-       <Topbar />
+      <Sidebar />
+      <div className="transfar_body">
+        <Topbar />
         <div className="transfar_options">
           <TransactionOptions />
+          <br />
           <div className="divider" />
           <span className="make_transfar">
-            {TransfarData.map((type, id) => {
+            {TransfarData.map((type) => {
               return (
                 <div
                   className="select_transfar_type"
                   onClick={() => {
-                    setOpenModal(true);
+                    if (type.id === 0) {
+                      setOpenModal1(true);
+                    } else if (type.id === 1) {
+                      setOpenModal1(true);
+                    } else {
+                      setOpenModal2(true);
+                    }
                   }}
                 >
                   <img src={type.icon} alt="bank.png" />
@@ -38,10 +50,20 @@ const Transactions = () => {
         </div>
       </div>
       <div className="modal_container">
-        {openModal && <BaasTransfar closeModal={setOpenModal} value={active}/>}
+        {openModal1 && <BaasTransfar closeModal={setOpenModal1} value={false} />}
+      </div>
+      <div className="modal_container">
+        {openModal2 && (
+          <BankTransfar closeModal={setOpenModal2} value={false} />
+        )}
+      </div>
+      <div className="modal_container">
+        {openModal3 && (
+          <International closeModal={setOpenModal3} value={false} />
+        )}
       </div>
     </div>
   );
-}
+};
 
-export default Transactions
+export default Transactions;
