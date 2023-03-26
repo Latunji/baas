@@ -33,7 +33,7 @@ const KYC = () => {
           </div>
         </div>
         <div className={classes.btn}>
-          <button><Link className='link' to="/supportDoc">Next</Link></button>
+        <Link className='link' to="/supportDoc"> <button>Next</button></Link>
         </div>
         <p className={classes.footer}>Baas 2023</p>
       </div>

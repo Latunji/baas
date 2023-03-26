@@ -9,22 +9,22 @@ export const SidebarData = [
   {
     icon: dashboard,
     heading: "Dashboard",
-    url: "/dashboard"
+    path: "/dashboard"
   },
   {
     icon: transactions,
     heading: "Transaction",
-    url: "/transactions"
+    path:'/transactions'
   },
   {
     icon: message,
     heading: "Messages",
-    url: "/messages"
+    path: '/message'
   },
   {
     icon: manageAccount,
     heading: "Account Management",
-    url: "/accountManagement"
+    path:'/manage'
   },
   
   

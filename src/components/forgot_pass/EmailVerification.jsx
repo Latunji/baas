@@ -1,31 +1,35 @@
 import React from 'react';
 import Nav from "./Nav";
-import classes from "../Verf/Verification.module.css";
-import verified from "../assets/verified.png";
+import key from '../assets/passkey.png';
 import right from '../assets/right.png';
+import Logo from '../assets/logo.png';
+import classes from "../forgot_pass/ForgotPassword.css";
 import { Link } from "react-router-dom";
 
 const EmailVerification = () => {
   return (
-    <main>
-      <Nav />
-      <section className={classes.check_email}>
-        <img src={verified} alt="verified" />
-        <h1>Check your email</h1>
+
+    <div className="forgotpassword">
+      <div className="top-bar">
+        <img src={Logo} alt="logo" />
+      </div>
+      <div className="forgot-form">
+        <img src={key} alt="" />
+        <h1>Check Your Email</h1>
         <p>We sent a verification link to your email</p>
+        <Link className="link" to="/verification">
         <button className="button">
-          <Link className="link" to="/verification">
-            Enter OTP
-          </Link>
+            Enter Otp
         </button>
+        </Link>
         <Link className='link1' to='/login'>
           <span className="back">
             <img src={right} alt="left.png" />
             <p>Back to log in</p>
           </span>
         </Link>
-      </section>
-    </main>
+      </div>
+    </div>
   );
 }
 

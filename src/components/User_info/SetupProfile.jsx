@@ -50,7 +50,6 @@ const SetupProfile = () => {
           <Link to='/businessInfo' className='link'>
           <button>Next</button>
           </Link>
-          
         </div>
         <p className={classes.footer}>Baas 2023</p>
       </div>

@@ -8,10 +8,12 @@ function SignUpPage() {
   return (
     <div className={classes.signin_body}>
       <div className={classes.form}>
-        <Header/>
+      <Header/>
         <SignUpForm/>
       </div>
-      <SignUpImageSection/>
+      <div>
+        <SignUpImageSection/>
+      </div>
     </div>
   );
 }

@@ -1,11 +1,11 @@
 import React from 'react';
-import gmail from"../assets/gmail.png"
+import gmail from "../assets/gmail.png"
 import classes from "./SignUpForm.module.css";
 import { Link } from 'react-router-dom';
 
 function SignUpForm() {
   return (
-    <div className={classes.signin__form__body}>
+    <div className={classes.signin__form__body_}>
       <div className={classes.welcome_message}>
         <h1>Sign Up</h1>
         <p>Welcome! Enter email address to begin.</p>
@@ -29,11 +29,12 @@ function SignUpForm() {
               </span>
             </label>
           </div>
-          <button className={classes.signin_button}>
-            <Link className="link" to="/emailVerification">
-              Continue
-            </Link>
+
+          <Link className="link2" to="/emailVerification"><button className={classes.signin_button}>
+            Continue
           </button>
+          </Link>
+          
           <button className={classes.google_signin}>
             <Link className="glink" to="/setupProfile">
               <img src={gmail} alt="gmail" />

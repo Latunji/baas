@@ -10,22 +10,24 @@ import { Link } from "react-router-dom";
 
 const NewPassword = () => {
   return (
-    <main>
-      <Nav />
-      <section className={classes.check_email}>
-    <img src={email} alt="verified" />
-        <h1>Set new password</h1>
-        <p>Your new password must be different to previously used passwords.</p>
-      <div className="forgot-form">
+    <div className="forgotpassword">
+<div className="top-bar">
+  <img src={Logo} alt="logo" />
+</div>
+<div className="forgot-form">
+<img src={email} alt="verified" />
+  <h1>Set New Password</h1>
+  <p>Your new password must be different to previously used passwords.</p>
+  <div className="forgot-form">
         <label>Password</label>
         <input type="text" placeholder="*******" />
         <label>Confirm Password</label>
         <input type="text" placeholder="*******" />
-        <button className="button">
-          <Link className="link" to="/passwordReset">
+        <Link className="link" to="/passwordReset">
+          <button className="button">
             Continue
-          </Link>
         </button>
+        </Link>
         <Link className="link1" to="/login">
           <span className="back">
             <img src={right} alt="left.png" />
@@ -33,8 +35,10 @@ const NewPassword = () => {
           </span>
         </Link>
       </div>
-    </section>
-    </main>
+</div>
+</div>
+
+
   );
 };
 

@@ -1,8 +1,9 @@
 .nav{
     display: flex;
     align-items: flex-start;
-    margin: 0;
-    padding: 0.5rem 1rem;
+    flex-direction: row;
+    /* margin: 0; */
+    /* padding: 0.5rem 1rem; */
 }
 .nav img{
     width: 125px;

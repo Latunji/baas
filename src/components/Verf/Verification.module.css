@@ -50,13 +50,13 @@
     width: 14px;
     padding: 0 1rem;
 }
-.otp{
+.otps{
     display: flex;
     flex-direction: row;
     margin: 1rem;
 
 }
-.otp input{
+.otps input{
 
     width: 50px;
     height: 50px;

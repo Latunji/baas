@@ -67,6 +67,7 @@
     width: 320px;
     height: 42px;
     border-radius: 8px;
+    padding: 5px;
 }
 .profileform select{
     border: 1px #BFBFBF solid;
@@ -99,8 +100,8 @@
     height: 42px;
     font-size: 16px;
     border: none;
-    margin-top:110px;
-    margin-left: 50%;
+    margin-top: 10%;
+    margin-left: 100%;
 }
 .btn p{
     color: #828282;

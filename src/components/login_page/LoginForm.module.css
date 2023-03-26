@@ -4,6 +4,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 20px;
+    margin-top: 150px;
 }
 .welcome_message{
     display: flex;

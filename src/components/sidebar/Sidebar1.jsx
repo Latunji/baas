@@ -5,7 +5,7 @@ import logo from '../assets/logo.png'
 
 const Sidebar1 = () => {
   return (
-    <div className="signup-menu">
+    <nav className="signup-menu">
       <div className="logo">
         <img src={logo} alt="logo.png" />
       </div>
@@ -21,7 +21,7 @@ const Sidebar1 = () => {
           )
         })}
       </div>
-    </div>
+    </nav>
   );
 }
 

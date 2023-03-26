@@ -19,7 +19,6 @@ import BankTransfar from "./components/transaction/bankTransfar/BankTransfar";
 import Transactions from "./components/transaction/Transactions";
 import BaasTransfar from "./components/transaction/baasTransfar/PaymentMethod";
 import Beneficiaries from "./components/transaction/baasTransfar/Beneficiaries";
-import TransferSummary from "./components/transaction/baasTransfar/TransfarSummary";
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
 import Baas from "./components/Dashboard/Baas";
@@ -61,7 +60,6 @@ function App() {
             <Route path="setupProfile" element={<SetupProfile />} />
             <Route path="supportDoc" element={<SupportDoc />} />
             <Route path="passwordReset" element={<PasswordReset />} />
-            <Route path="summary" element={<TransferSummary/>}/>
 
             <Route path="emailVerification" element={<EmailVerification />} />
             <Route path="verified" element={<Verified />} />

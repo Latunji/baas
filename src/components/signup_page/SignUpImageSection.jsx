@@ -6,7 +6,7 @@ import Overlay from './signUpOverlay';
 function SignUpImageSection() {
   return (
     <div className={classes.image_section}>
-      <img src={image} alt="image" />
+      <img src={image} className={classes.image} alt="image" />
      
     </div>
   );

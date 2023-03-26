@@ -11,7 +11,7 @@ function LoginPage() {
         <Header/>
         <LoginForm/>
       </div>
-      <div className={classes.image}>
+      <div>
         <ImageSection/>
       </div>
       
