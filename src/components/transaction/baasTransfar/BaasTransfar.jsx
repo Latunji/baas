@@ -61,6 +61,8 @@ function BaasTransfar({closeModal}) {
           </div>
         </div>
       )}
+
+      {/* reciever info */}
       {change === "id2" && (
         <div className="transfar">
           <div className="header">

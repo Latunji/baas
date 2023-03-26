@@ -17,14 +17,12 @@ function LoginForm() {
             type="text"
             placeholder="youremail@gmail.com"
             id="email"
-            name="email"
           />
           <label for="password">Password</label>
           <input
-            type="text"
+            type="password"
             placeholder="password"
             id="password"
-            name="password"
           />
           <div className={classes.save__login}>
             <label>

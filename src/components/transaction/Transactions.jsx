@@ -1,68 +1,56 @@
 import { React, useState } from "react";
 import "./Transactions.css";
 import Sidebar from "../sidebar/Sidebar";
-import { TransfarData } from "./TransfarData";
+import { TransfarType } from "./TransfarData";
+
 import Topbar from "../Dashboard/dash/Topbar";
-
-import TransactionOptions from "./TransactionOptions";
-import BaasTransfar from "./baasTransfar/BaasTransfar";
-import BankTransfar from "./bankTransfar/BankTransfar";
-import International from "./internationalTransfar/International";
-
+import Transfars from "./Transfars";
+import BillPayment from './BillPayment/BillPayment'
 
 const Transactions = () => {
-  const TransfarType = ["baas", "bank", 'international']
-  const [openModal1, setOpenModal1] = useState(false);
-  const [openModal2, setOpenModal2] = useState(false);
-  const [openModal3, setOpenModal3] = useState(false);
+  const [selected, setSelected] = useState(0);
+
+  const [loadPage, setLoadPage] = useState(true);
+  const [loadPage2, setLoadPage2] = useState(false);
+  const [loadPage3, setLoadPage3] = useState(false);
 
   return (
-    <div className="transaction">
+    <main className="transaction">
       <Sidebar />
       <div className="transfar_body">
         <Topbar />
         <div className="transfar_options">
-          <TransactionOptions />
-          <br />
-          <div className="divider" />
-          <span className="make_transfar">
-            {TransfarData.map((type) => {
+          <span className="transfar_type">
+            {TransfarType.map((type, id) => {
               return (
                 <div
-                  className="select_transfar_type"
+                  className={
+                    selected === id ? " select_type active" : "select_type"
+                  }
                   onClick={() => {
-                    if (type.id === "1") {
-                      setOpenModal1(true);
-                    } else if (type.id === "2") {
-                      setOpenModal2(true);
+                    setSelected(id);
+                    // if (type.id === "1") {
+                    //   setLoadPage(true);
+                    //   console.log("working");
+                    // } 
+                    if (type.id === "2") {
+                      setLoadPage2(true);
+                      console.log("working2");
                     } else {
-                      setOpenModal3(true);
-                    }
-                  }}
-                >
-                  <img src={type.icon} alt="bank.png" />
-                  <h1>{type.title}</h1>
-                  <p>{type.body}</p>
+                      setLoadPage3(true);
+                      console.log("working3");
+                    } }} >
+                  <p>{type.heading}</p>
+                  {loadPage && <TransfarType />}
+                  {/* {loadPage2  && <BillPayment />}
+                  {loadPage3 && <Transfars  />} */}
                 </div>
               );
             })}
           </span>
         </div>
       </div>
-      <div className="modal_container">
-        {openModal1 && <BaasTransfar closeModal={setOpenModal1} value={false} />}
-      </div>
-      <div className="modal_container">
-        {openModal2 && (
-          <BankTransfar closeModal={setOpenModal2} value={false} />
-        )}
-      </div>
-      <div className="modal_container">
-        {openModal3 && (
-          <International closeModal={setOpenModal3} value={false} />
-        )}
-      </div>
-    </div>
+    </main>
   );
 };
 

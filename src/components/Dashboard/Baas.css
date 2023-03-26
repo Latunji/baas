@@ -1,18 +1,7 @@
-/* .baas{
-    display: flex;
-    gap: 1rem;
-    max-height: inherit;
-    width: inherit;
-    box-sizing: border-box;
-    
-    
-} */
+
 .baas{
-    /* display: flex;
-    max-height: inherit; */
-    display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
-    height: 100vh;
+    display: flex;
+    height: calc(100vh -2px);
     width: inherit;
     position: absolute;
     top: 0px;
@@ -20,6 +9,7 @@
     background-color: var(--background);
 }
 .body{
+    flex:4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +28,7 @@
     grid-template-columns:2fr 1fr;
     gap: 1rem;
     margin-right: 1rem;
-}
+} 
 .grid-col-span{
     grid-row: 2 span;
 }

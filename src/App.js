@@ -13,6 +13,8 @@ import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
 import Baas from "./components/Dashboard/Baas";
 import Transactions from "./components/transaction/Transactions";
+import BillPayment from './components/transaction/BillPayment/BillPayment'
+import Transfars from "./components/transaction/Transfars";
 
 function App() {
   return (
@@ -46,7 +48,8 @@ function App() {
             <Route path="setupProfile" element={<SetupProfile />} />
             <Route path="supportDoc" element={<SupportDoc />} />
             <Route path="transactions" element={<Transactions/>}/>
-
+            <Route path="billPayment" element={<BillPayment/>}/>
+            <Route path="history" element={<Transfars/>}/>
             {/* If any route mismatches the upper 
         route endpoints then, redirect triggers 
         and redirects app to home component with to="/" */}

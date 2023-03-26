@@ -12,12 +12,10 @@ const Baas = () => {
         <div className="body">
           <Topbar/>
           <div className="dashboard_body ">
-            {/* <TransactionHistory/> */}
             <div className="dash grid-col-span">
               <Dashboard />
             </div>
             <Payment />
-            {/* <Transactions/> */}
           </div>
         </div>
       </div>

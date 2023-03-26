@@ -6,7 +6,7 @@ const Topbar = () => {
 
     const [search, setSearch] = useState(false);
   return (
-    <div className='topbar'>
+    <nav className='topbar'>
         <h1>Dashboard</h1>
         <div className='notification-section'>
             {Notification.map((item, index) => {
@@ -17,7 +17,7 @@ const Topbar = () => {
                 )
             })}
         </div>
-    </div>
+    </nav>
 
 
   )

@@ -11,7 +11,6 @@ function International({closeModal}) {
         <div className="transfar">
           <div className="header">
             <h1>Fund Transfar</h1>
-
             <button
               onClick={() => {
                 closeModal(false);

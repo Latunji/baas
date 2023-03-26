@@ -10,6 +10,7 @@
     padding-left: 1rem;
     background-color: var(--background);
     z-index: 10;
+    animation: none;
     /* margin: 1rem; */
 }
 .notification-section{

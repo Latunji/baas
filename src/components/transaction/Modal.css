@@ -239,3 +239,11 @@ input[type="button"]{
     border: 1px solid #A499D1;
     border-radius: 8px;
 } 
+
+
+
+/* History Section */
+
+.transfar-history{
+    background-color: var(--background);
+}
