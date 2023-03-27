@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import key from '../assets/passkey.png';
 import right from '../assets/right.png';
 import Logo from '../assets/logo.png';
-import classes from "../forgot_pass/ForgotPassword.css";
+import "./ForgotPassword.css";
 import { Link } from "react-router-dom";
 
 const EmailVerification = () => {

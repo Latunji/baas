@@ -25,12 +25,15 @@ export const TransfarData = [
 export const TransfarType = [
   {
     heading: "Funds Transfer",
+    url: "/transactions"
   },
   {
     heading: "Bills Payment",
+    url: "/billPayment"
   },
   {
     heading: "Transaction History",
+    url: "/transactionHistory"
   },
 ];
 

@@ -19,14 +19,16 @@ import BankTransfar from "./components/transaction/bankTransfar/BankTransfar";
 import Transactions from "./components/transaction/Transactions";
 import BaasTransfar from "./components/transaction/baasTransfar/PaymentMethod";
 import Beneficiaries from "./components/transaction/baasTransfar/Beneficiaries";
+import Airtime from "./components/transaction/BillPayment/Airtime";
 import { BrowserRouter, Routes, Route, redirect } from "react-router-dom";
 import "./App.css";
 import Baas from "./components/Dashboard/Baas";
 import PaymentMethod from "./components/transaction/baasTransfar/PaymentMethod";
 import BillPayment from "./components/transaction/BillPayment/BillPayment";
 import Bills from "./components/transaction/BillPayment/Bills";
-import History from "./components/transaction/History";
+import History from "./components/transaction/TransactionHistory";
 import Sidebar2 from "./components/sidebar/Sidebar2";
+import TransactionDetails from "./components/transaction/TransactionDetails";
 function App() {
   return (
     <main className="app">
@@ -72,6 +74,8 @@ function App() {
             <Route path="bills" element={<Bills />} />
             <Route path="transactionHistory" element={<History />} />
             <Route path="sidebar2" element={<Sidebar2 />} />
+            <Route path="airtime" element={<Airtime />} />
+            <Route path="transactionDetails" element={<TransactionDetails />} />
             {/* If any route mismatches the upper 
         route endpoints then, redirect triggers 
         and redirects app to home component with to="/" */}

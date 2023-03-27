@@ -19,10 +19,12 @@ import lending from '../../assets/bills/lending.png'
 
 export const Mobile = [
     {
+        id: "1",
         icon: phone,
         title: "Airtime",
     },
     {
+        id: "2",
         icon: data,
         title: "Data Bundle",
     }

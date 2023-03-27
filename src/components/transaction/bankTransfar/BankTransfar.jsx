@@ -187,9 +187,11 @@ function BankTransfar({closeModal}) {
                 <input type="text" className="pin" />
               </form>
               <p>Forgot Pin?</p>
+              <form className="form">
               <input type="button" onClick={() => {
                 setModalForm("id5");
               }} value="Confirm" />
+              </form>
             </div>
           </div>
         </div>
@@ -286,11 +288,15 @@ function BankTransfar({closeModal}) {
               <div className='success_msg_row'>
                 <p>Recipient</p><p>David Ogunmodede<br /><span>Wema Bank(123 456 7890)</span></p>
               </div>
+              </div>
               <hr className="divider_receipt" />
+              <div className="success_msg">
               <div className='success_msg_row'>
                 <p>Sender</p><p>Opeoluwa Ogunmodede<br /><span>Baas | 512 433 3533</span></p>
               </div>
+              </div>
               <hr className="divider_receipt" />
+              <div className="success_msg">
               <p>Transaction Info</p>
               <div className='success_msg_row'>
                 <p>Transfer Type</p><p>One-Off</p>

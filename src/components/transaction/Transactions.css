@@ -12,6 +12,15 @@
     top: 0px;
 }
 
+.transaction2 {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
 /* Body and top bar */
 .transfar_body {
     display: flex;

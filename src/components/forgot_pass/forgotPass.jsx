@@ -16,11 +16,11 @@ const ForgotPassword = () => {
         <h1>Forgot Password?</h1>
         <p>No worries, we'll send you reset instructions</p>
         <input type="text" placeholder="Enter your email" />
-        <button className="button">
-          <Link className="link" to="/checkMail">
+        <Link className="link" to="/checkMail">
+          <button className="button">
             Reset Password
-          </Link>
-        </button>
+          </button>
+        </Link>
         <Link className='link1' to='/login'>
           <span className="back">
             <img src={right} alt="left.png" />

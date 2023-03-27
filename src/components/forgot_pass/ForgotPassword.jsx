@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.png';
-import classes from "../Verf/Verification.module.css";
+// import classes from "../Verf/Verification.module.css";
 import key from '../assets/passkey.png';
-import './ForgotPassword.css';
+ import './ForgotPassword.css';
 import right from '../assets/right.png';
 
 const ForgotPassword = () => {
@@ -18,7 +18,7 @@ const ForgotPassword = () => {
         <p>We sent a password reset link to oopeoluwa@gmail.com</p>
         <input type="text" placeholder="Enter your email" />
         <Link className="link" to="/newPassword">
-          <button className={classes.button}>
+          <button className="button">
             Reset Password
           </button>
         </Link>

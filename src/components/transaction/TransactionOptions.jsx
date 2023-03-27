@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import { TransfarType } from "./TransfarData";
 import "./Transactions.css";
+import { Link } from 'react-router-dom';
 
 function TransactionOptions() {
   const [selected, setSelected] = useState(0);
@@ -18,7 +19,7 @@ function TransactionOptions() {
                 setSelected(id);
               }}
             >
-              <p>{type.heading}</p>
+           <Link className="link" to={type.url}>  <p>{type.heading}</p></Link> 
             </div>
           );
         })}
