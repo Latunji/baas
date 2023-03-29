@@ -30,11 +30,14 @@ const FinancialInfo = () => {
           </div>
         </div>
         <div className={classes.btn}>
-          <Link to='/setupProfile'><p>back</p></Link>
+          <div className={classes.link}>
+          <Link to='/businessInfo'><p>back</p></Link>
+          </div>
+          <div>
           <Link className='link' to='/kyc'>
           <button>Next</button>
           </Link>
-          
+          </div>
         </div>
         <p className={classes.footer}>Baas 2023</p>
       </div>

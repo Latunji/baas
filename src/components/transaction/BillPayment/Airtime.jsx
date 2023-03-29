@@ -182,7 +182,7 @@ function Airtime({ closeModal }) {
                 </div>
             )}
             {change === "id7" && (
-                <div className="receipt"><br /><br /><br />
+                <div className="receipt">
                     <div className="header_receipt">
                         <button
                             onClick={() => {
@@ -199,7 +199,6 @@ function Airtime({ closeModal }) {
                         <h1>N5000</h1>
                         <p>Successful Transaction</p>
                         <p>05:01, Mar 23, 2023</p>
-                        <br />
                         <hr className="divider_receipt" />
                         <div className="success_msg">
                             <div className='success_msg_row'>
@@ -233,8 +232,6 @@ function Airtime({ closeModal }) {
                                 <p>Status</p><p>Successful</p>
                             </div>
                         </div>
-                        
-                        <hr className="divider_receipt" />
 
                         <input type="button" value="Download" />
                     </div>

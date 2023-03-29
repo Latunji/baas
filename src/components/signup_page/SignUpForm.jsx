@@ -7,7 +7,7 @@ function SignUpForm() {
   return (
     <div className={classes.signin__form__body_}>
       <div className={classes.welcome_message}>
-        <h1>Sign Up</h1>
+        <h1>Sign Up</h1><br/>
         <p>Welcome! Enter email address to begin.</p>
       </div>
       <div className={classes.fillform}>

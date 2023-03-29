@@ -7,7 +7,7 @@ function LoginForm() {
   return (
     <div className={classes.signin__form__body}>
       <div className={classes.welcome_message}>
-        <h1>Welcome Back</h1>
+        <h1>Welcome Back</h1><br/>
         <p>Welcome back! Please enter your details.</p>
       </div>
       <div className={classes.fillform}>
@@ -27,15 +27,19 @@ function LoginForm() {
             name="password"
           />
           <div className={classes.save__login}>
+            <div>
             <label>
-              <input type="checkbox" id="save"></input>
+              <input type="checkbox" id="save" /> 
               <span className={classes.remember_me}>
-                Remember me for the next 30 days.
+                Remember me for 30 days.
               </span>
+            </label>
+            </div>
+            <div>
               <span className={classes.forgot_p}>
                 <Link className='link' to='/forgotPassword'>forgot password</Link>
               </span>
-            </label>
+              </div>
           </div>
           <Link className='link' to="/dashboard">
             <button className={classes.signin_button}>

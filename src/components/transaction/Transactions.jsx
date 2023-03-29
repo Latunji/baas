@@ -18,13 +18,19 @@ const Transactions = () => {
 
   return (
     <div className="transaction">
+      <div>
       <Sidebar />
+        </div>
       <div className="transfar_body">
+      
         <Topbar />
+       
         <div className="transfar_options">
           <TransactionOptions />
+          
           <br />
           <div className="divider" />
+          
           <span className="make_transfar">
             {TransfarData.map((type) => {
               return (
@@ -47,9 +53,7 @@ const Transactions = () => {
               );
             })}
           </span>
-        </div>
-      </div>
-      <div className="modal_container">
+          <div className="modal_container">
         {openModal1 && <BaasTransfar closeModal={setOpenModal1} value={false} />}
         {openModal2 && 
           <BankTransfar closeModal={setOpenModal2} value={false} />
@@ -58,6 +62,10 @@ const Transactions = () => {
           <International closeModal={setOpenModal3} value={false} />
         }
       </div>
+        </div>
+     
+      </div>
+      
     </div>
   );
 };

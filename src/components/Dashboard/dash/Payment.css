@@ -19,6 +19,7 @@
     margin: 1rem 0rem;
     text-align: left;
     height: 20px;
+    margin-left: 15px;
 }
 .payment-section>hr{
     width: 40%;
@@ -41,14 +42,19 @@
     padding: 0px;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     height: 78px;
     cursor: pointer;
 }
 .send-button{
     display: flex;
     flex-direction: column;
-    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.send-button p{
+    margin-left: -5px;
 }
 .send-button>img{
     width: 48px;

@@ -13,7 +13,7 @@ function International({closeModal}) {
   return (
     <section className="modal">
       {modalForm === "id" && (
-        <div className="transfar"><br/><br/>
+        <div className="transfar"><br/><br/><br /><br/>
           <div className="header">
             <h1>Fund Transfar</h1>
 
@@ -39,17 +39,18 @@ function International({closeModal}) {
               <div className="form">
                 <label>Account Number</label>
                 <input type="text" placeholder="Enter Account Number" />
-
+                <br/>
                 <select value="Select Beneficiary">
                   <label>Bank</label>
                   <option value="bank">Bank</option>
                 </select>
+                <br/>
                 <label>Reciepiant Name</label>
                 <input type="text" placeholder="Recipient Name" />
-
+                <br/>
                 <label>Bank Swift Code</label>
                 <input type="text" placeholder="Swift Code" />
-
+                <br/>
                 <label>Amount</label>
                 <input type="text" placeholder="Amountr" />
 
@@ -75,7 +76,7 @@ function International({closeModal}) {
         </div>
       )}
      {modalForm === "id2" && (
-        <div className="transfar"><br /><br /><br />
+        <div className="transfar"><br /><br /><br /><br/>
           <div className="header">
             <h1>Payment Summary</h1>
             <button
@@ -129,7 +130,7 @@ function International({closeModal}) {
 
       {/* payment method */}
       {modalForm === "id3" && (
-        <div className="transfar"><br /><br /><br />
+        <div className="transfar"><br /><br /><br /><br/>
           <div className="header">
             <h1>Select payment methods</h1>
             <button
@@ -175,7 +176,7 @@ function International({closeModal}) {
         </div>
       )}
       {modalForm === "id4" && (
-        <div className="transfar_pin_body"><br /><br /><br />
+        <div className="transfar_pin_body"><br /><br /><br /><br/>
           <div className="header">
             <h1>Transaction Pin</h1>
             <button
@@ -209,7 +210,7 @@ function International({closeModal}) {
         </div>
       )}
       {modalForm === "id5" && (
-        <div className="transfar_pin_body"><br /><br /><br />
+        <div className="transfar_pin_body"><br /><br /><br /><br/>
           <div className="header">
             <h1>OTP Verification</h1>
             <button
@@ -241,7 +242,7 @@ function International({closeModal}) {
         </div>
       )}
       {modalForm === "id6" && (
-        <div className="transfar"><br /><br />
+        <div className="transfar"><br /><br /><br /><br/>
           <div className="header">
             <button
               onClick={() => {
@@ -252,7 +253,7 @@ function International({closeModal}) {
             </button>
           </div>
           <hr className="divider" />
-          <div className="transfar_pin">
+          <div className="transfar_success">
             <img src={verified} alt="verified.png" />
             <h1>Successful</h1>
             <br />
@@ -278,7 +279,7 @@ function International({closeModal}) {
         </div>
       )}
       {modalForm === "id7" && (
-        <div className="receipt"><br /><br />
+        <div className="receipt"><br /><br /><br /><br/>
           <div className="header">
             <button
               onClick={() => {
@@ -290,7 +291,7 @@ function International({closeModal}) {
           <div className='logo'>
           <img src={logo} alt="logo.png" />
           </div>
-          <div className="transfar_pin">
+          <div className="transfar_success">
             <h1>N5000</h1>
             <p>Successful Transaction</p>
             <p>05:01, Mar 23, 2023</p>

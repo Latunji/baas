@@ -15,7 +15,7 @@ function BaasTransfar({ closeModal }) {
   return (
     <section className="modal">
       {change === "id" && (
-        <div className="transfar"><br /><br /><br />
+        <div className="transfar"><br /><br /><br /><br/>
           <div className="header">
             <h1>Fund Transfer</h1>
             <button
@@ -40,7 +40,7 @@ function BaasTransfar({ closeModal }) {
               <div className="form">
                 <label>Account Number</label>
                 <input type="text" placeholder="Enter 10-digit Account Number" />
-
+<br/>
                 <label>Amount</label>
                 <input type="text" placeholder="Amount" />
 
@@ -66,7 +66,7 @@ function BaasTransfar({ closeModal }) {
         </div>
       )}
       {change === "id2" && (
-        <div className="transfar"><br /><br /><br />
+        <div className="transfar"><br /><br /><br /><br />
           <div className="header">
             <h1>Payment Summary</h1>
             <button
@@ -120,7 +120,7 @@ function BaasTransfar({ closeModal }) {
 
       {/* payment method */}
       {change === "id3" && (
-        <div className="transfar"><br /><br /><br />
+        <div className="transfar"><br /><br /><br /><br />
           <div className="header">
             <h1>Select payment methods</h1>
             <button
@@ -166,7 +166,7 @@ function BaasTransfar({ closeModal }) {
         </div>
       )}
       {change === "id4" && (
-        <div className="transfar_pin_body"><br /><br /><br />
+        <div className="transfar_pin_body"><br /><br /><br /><br />
           <div className="header">
             <h1>Transaction Pin</h1>
             <button
@@ -200,7 +200,7 @@ function BaasTransfar({ closeModal }) {
         </div>
       )}
       {change === "id5" && (
-        <div className="transfar_pin_body"><br /><br /><br />
+        <div className="transfar_pin_body"><br /><br /><br /><br />
           <div className="header">
             <h1>OTP Verification</h1>
             <button
@@ -232,7 +232,7 @@ function BaasTransfar({ closeModal }) {
         </div>
       )}
       {change === "id6" && (
-        <div className="transfar"><br /><br />
+        <div className="transfar"><br /><br /><br/><br />
           <div className="header">
             <button
               onClick={() => {
@@ -243,7 +243,7 @@ function BaasTransfar({ closeModal }) {
             </button>
           </div>
           <hr className="divider" />
-          <div className="transfar_pin">
+          <div className="transfar_success">
             <img src={verified} alt="verified.png" />
             <h1>Successful</h1>
             <br />
@@ -269,7 +269,7 @@ function BaasTransfar({ closeModal }) {
         </div>
       )}
       {change === "id7" && (
-        <div className="receipt"><br /><br />
+        <div className="receipt"><br /><br /><br/><br />
           <div className="header">
             <button
               onClick={() => {
@@ -281,7 +281,7 @@ function BaasTransfar({ closeModal }) {
           <div className='logo'>
           <img src={logo} alt="logo.png" />
           </div>
-          <div className="transfar_pin">
+          <div className="transfar_success">
             <h1>N5000</h1>
             <p>Successful Transaction</p>
             <p>05:01, Mar 23, 2023</p>

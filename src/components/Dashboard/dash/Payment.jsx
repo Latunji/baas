@@ -24,7 +24,7 @@ const Payment = () => {
         })}
       </div>
       <div className="quick-transfers">
-        <h1>Quick Transfars</h1>
+        <h1>Quick Transfers</h1>
         <select className="reciever" id="reciever">
           <option selected disabled>Select Reciever</option>
           {QuickTransfar.map((users) => {

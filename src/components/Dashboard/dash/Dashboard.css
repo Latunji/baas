@@ -4,7 +4,9 @@
     align-items: center;
     box-sizing: border-box;
     justify-content: space-evenly;
-    max-height: inherit;
+    /* max-height: inherit; */
+    height: 100%;
+
     
 }
 .mid_dash{

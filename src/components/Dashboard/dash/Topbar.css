@@ -1,18 +1,18 @@
 .topbar{
     display: flex;
-    width: 120%;
+    width: 100%;
     height: 5rem;
     position: sticky;
     top: 0px;
     align-items: center;
     justify-content: space-between;
     font-weight: 500;
-    padding-left: 1rem;
+    padding-left: 2rem;
     background-color: var(--background);
     z-index: 10;
     /* margin: 1rem; */
 }
 .notification-section{
     display: flex;
-    margin: 1rem 4rem;
+    margin: 1rem 2rem;
 }

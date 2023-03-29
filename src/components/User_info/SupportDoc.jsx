@@ -11,8 +11,10 @@ const SupportDoc = (props) => {
       <Sidebar1 />
 
       <div className={classes.info}>
+      <div className={classes.currentpage}>
         <h1>Supporting Documents</h1>
         <p>Upload your documents for verification.</p>
+        </div>
         <div className={classes.info2}>
           {DocData.map((indx) => {
             return (

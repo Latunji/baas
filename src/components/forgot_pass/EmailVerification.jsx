@@ -22,12 +22,14 @@ const EmailVerification = () => {
             Enter Otp
         </button>
         </Link>
+        <div className='login_btn'>
         <Link className='link1' to='/login'>
           <span className="back">
             <img src={right} alt="left.png" />
             <p>Back to log in</p>
           </span>
         </Link>
+        </div>
       </div>
     </div>
   );

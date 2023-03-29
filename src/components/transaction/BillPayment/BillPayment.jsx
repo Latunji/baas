@@ -22,6 +22,9 @@ const BillPayment = () => {
           <br />
           <div className="divider" />
           <span className="make_transfar">
+          <div className="modal_container">
+        {openModal1 && <Airtime closeModal={setOpenModal1} value={false} />}
+      </div>
           <div className="bill_sections">
         <div className="mobile">
             {Mobile.map((value) =>{
@@ -93,9 +96,7 @@ const BillPayment = () => {
           </span>
         </div>
       </div>
-      <div className="modal_container">
-        {openModal1 && <Airtime closeModal={setOpenModal1} value={false} />}
-      </div>
+     
       </div>
 
 

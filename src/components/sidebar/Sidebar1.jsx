@@ -6,7 +6,7 @@ import logo from '../assets/logo.png'
 const Sidebar1 = () => {
   return (
     <nav className="signup-menu">
-      <div className="logo">
+      <div className="logo2">
         <img src={logo} alt="logo.png" />
       </div>
       <div className='stages'>

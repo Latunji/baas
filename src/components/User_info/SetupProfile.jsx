@@ -5,7 +5,7 @@ import classes from './Userinfo.module.css'
 
 const SetupProfile = () => {
   return (
-    <main className={classes.userinfo}>
+    <div className={classes.userinfo}>
       <Sidebar />
       <div className={classes.info}>
         <div className={classes.currentpage}>
@@ -53,7 +53,7 @@ const SetupProfile = () => {
         </div>
         <p className={classes.footer}>Baas 2023</p>
       </div>
-    </main>
+    </div>
   );
 }
 
