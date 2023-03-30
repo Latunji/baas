@@ -17,16 +17,16 @@ const BillPayment = () => {
       <Sidebar />
       <div className="transfar_body">
         <Topbar />
-        <div className="transfar_options">
+        <div className="">
           <TransactionOptions />
           <br />
           <div className="divider" />
-          <span className="make_transfar">
+          <span className="bill_content">
           <div className="modal_container">
         {openModal1 && <Airtime closeModal={setOpenModal1} value={false} />}
       </div>
           <div className="bill_sections">
-        <div className="mobile">
+        <div className="two_cards">
             {Mobile.map((value) =>{
                 return(
                     <div className="bill_container"  onClick={() => {
@@ -58,7 +58,7 @@ const BillPayment = () => {
         </div>
         <div className="sections">
             <h1>Education</h1>
-            <div className="section_content">
+            <div className="two_cards">
                 {Education.map((value) =>{
                     return (
                     <div className="bill_container">
@@ -70,7 +70,7 @@ const BillPayment = () => {
         </div>
         <div className="sections">
             <h1>Travels</h1>
-            <div className="section_content">
+            <div className="three_cards">
                 {Travels.map((value) =>{
                     return (
                     <div className="bill_container">
@@ -82,7 +82,7 @@ const BillPayment = () => {
         </div>
         <div className="sections">
             <h1>Finance</h1>
-            <div className="section_content">
+            <div className="three_cards">
                 {Finance.map((value) =>{
                     return (
                     <div className="bill_container">

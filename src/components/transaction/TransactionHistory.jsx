@@ -17,9 +17,9 @@ const TransactionHistory = () => {
 return (
   <div className="transaction">
     <Sidebar />
-    <div className="transfar_body">
+    <div className="">
       <Topbar />
-      <div className="transfar_options">
+      <div className="">
         <TransactionOptions />
         <br />
         <div className="divider" />

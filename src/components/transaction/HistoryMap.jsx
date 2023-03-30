@@ -2,28 +2,40 @@ import { React, useState } from 'react';
 import HistoryMapData from './HistoryMapData';
 import "../Dashboard/dash/Dashboard.css";
 import { Transaction } from './Transaction';
+import MUIDataTable from "mui-datatables";
 
 const HistoryMap = () => {
     // const [selected, setSelected] = useState(0)
+    const columns = ["icon","Recipient Name", "Transaction ID",  "Account Number",  "Channel","Date", "Amount", "Status"];
+    const options = {
+        filterType: "checkbox",
+      };
     return (
         <div className="histories2">
             <div className='search'>
-                <div>
-                <input type="text" className='search_input' placeholder="Search Transaction ID" />
-                </div>
-                <div>
-                <select className='select'>
-                    <option>Sort By</option>
-                </select>
-                <select className='select'>
-                <option>Filter By</option>
-                </select>
-                </div>
+                {/* <div>
+                    <input type="text" className='search_input' placeholder="Search Transaction ID" />
+                </div> */}
+                {/* <div>
+                    <select className='select'>
+                        <option>Sort By</option>
+                    </select>
+                    <select className='select'>
+                        <option>Filter By</option>
+                    </select>
+                </div> */}
             </div>
             <div>
                 <br />
                 <div className=''>
-                    <table>
+
+                    <MUIDataTable
+                        title={"Transaction History"}
+                        data={Transaction}
+                        columns={columns}
+                        options={options}
+                    />
+                    {/* <table>
                         <tr className='tableHead'>
                             <th>...</th>
                             <th>Transaction ID</th>
@@ -48,9 +60,9 @@ const HistoryMap = () => {
                         />
                     );
                 })}
-                    </table>
+                    </table> */}
                 </div>
-                
+
             </div>
         </div>
     );

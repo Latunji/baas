@@ -25,7 +25,7 @@ const Transactions = () => {
       
         <Topbar />
        
-        <div className="transfar_options">
+        <div className="">
           <TransactionOptions />
           
           <br />
