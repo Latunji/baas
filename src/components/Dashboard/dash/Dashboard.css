@@ -94,20 +94,86 @@
     margin: 1rem;
     border-radius: 10px;
 }
+.table{
+    /* display: flex;
+    flex-direction: column; */
+    /* box-sizing: border-box; */
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    /* padding: 1rem;
+    margin: 1rem; */
+    /* border-radius: 10px; */
+}
+.tbl{
+    width : 100%;
+}
 .search{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    gap: 70%;
+}
+.footer{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
     gap: 50%;
 }
-/* .search_input{
+.selectBtns{
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    float: right;
+    margin-left: 20px;
+    gap: 30px;
+}
+.btn{
+    height: 30px;
+    width: 80px;
+    background-color: #FFFFFF;
     border-radius: 5px;
-    height: 20px;
-} */
+    border-color: grey;
+}
+.btmBtn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.logoTable{
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+}
+.textTable{
+    width: 100px;
+    text-align: center;
+    padding: 20px 0;
+}
+.search input[type=text]{
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 150%;
+  border-radius: 5px;
+  padding: 10px;
+  height: 50px;
+}
+.search button{
+    float: left;
+  width: 20%;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
 .select{
     width: 100px;
     border: 1px solid grey;
     border-radius: 5px;
-    height: 20px;
+    height: 50px;
 }
 .td{
     text-align: center;
@@ -122,14 +188,17 @@
   } */
 .tableHead{
     background-color: #E9E6F4;
+    width: 100%;
   display: flex;
   flex-direction: row;
+  height: 50px;
   gap: 30px;
 }
 .tableRow{
   display: flex;
+  width:100%;
   flex-direction: row;
-  gap: 30px;
+  gap: 100px;
 }
 
 .history{

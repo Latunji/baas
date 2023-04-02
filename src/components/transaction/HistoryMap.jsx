@@ -2,49 +2,42 @@ import { React, useState } from 'react';
 import HistoryMapData from './HistoryMapData';
 import "../Dashboard/dash/Dashboard.css";
 import { Transaction } from './Transaction';
+import search from "../assets/dashboard/search.png";
 import MUIDataTable from "mui-datatables";
 
 const HistoryMap = () => {
     // const [selected, setSelected] = useState(0)
     const columns = ["icon","Recipient Name", "Transaction ID",  "Account Number",  "Channel","Date", "Amount", "Status"];
     const options = {
-        filterType: "checkbox",
       };
     return (
         <div className="histories2">
             <div className='search'>
-                {/* <div>
-                    <input type="text" className='search_input' placeholder="Search Transaction ID" />
-                </div> */}
-                {/* <div>
+                <div>
+                {/* <button type="submit"><img src={search} /></button>  */}
+                <input type="text" className='search_input' placeholder="Search Transaction ID" />
+                </div>
+                <div className='selectBtns'>
                     <select className='select'>
                         <option>Sort By</option>
                     </select>
                     <select className='select'>
                         <option>Filter By</option>
                     </select>
-                </div> */}
+                </div>
             </div>
-            <div>
                 <br />
-                <div className=''>
-
-                    <MUIDataTable
-                        title={"Transaction History"}
-                        data={Transaction}
-                        columns={columns}
-                        options={options}
-                    />
-                    {/* <table>
+                <div className='table'>
+                    <table className='tbl'>
                         <tr className='tableHead'>
-                            <th>...</th>
-                            <th>Transaction ID</th>
-                            <th>Recipient Name</th>
-                            <th>Account Number</th>
-                            <th>Date</th>
-                            <th>Amount</th>
-                            <th>Channel</th>
-                            <th>Status</th>
+                            <th className='logoTable'></th>
+                            <th className='logoTable'>Transaction ID</th>
+                            <th className='logoTable'>Recipient Name</th>
+                            <th className='logoTable'>Account Number</th>
+                            <th className='logoTable'>Date</th>
+                            <th className='logoTable'>Amount</th>
+                            <th className='logoTable'>Channel</th>
+                            <th className='logoTable'>Status</th>
                         </tr>
                         {Transaction.map((history, id) => {
                     return (
@@ -60,10 +53,17 @@ const HistoryMap = () => {
                         />
                     );
                 })}
-                    </table> */}
+                    </table>
                 </div>
-
-            </div>
+                <div className='footer'>
+                    <div>
+                        <p>Page 1 of 10</p>
+                    </div>
+                    <div className='btmBtn'>
+                        <button className='btn'>Previous</button>
+                        <button className='btn'>Next</button>
+                    </div>
+                </div>
         </div>
     );
 }

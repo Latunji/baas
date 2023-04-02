@@ -23,9 +23,7 @@ return (
         <TransactionOptions />
         <br />
         <div className="divider" />
-        <span className="">
         <Histories/>
-        </span>
       </div>
     </div>
     <div className="modal_container">
